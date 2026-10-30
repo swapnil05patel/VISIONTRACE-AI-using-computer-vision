@@ -1,0 +1,670 @@
+{
+  "datasetId": "msmt17",
+  "root": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17",
+  "layoutOk": true,
+  "discoveredFiles": 72,
+  "validSamples": 72,
+  "identities": 12,
+  "cameras": 5,
+  "skipped": 0,
+  "splits": {
+    "train": 36,
+    "query": 12,
+    "gallery": 24
+  },
+  "errors": [],
+  "purpose": "benchmark",
+  "accessNote": "MSMT17 requires agreement with the dataset providers. Confirm access terms before import. Media stays on the configured filesystem.",
+  "importedAt": "2026-10-23T11:18:42.973475+00:00",
+  "dryRun": false,
+  "samples": [
+    {
+      "id": "1adff87fd612f251fb43eb29377db7fe0719254e071a09c4469f36f752616eb7",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0001/0001_c1_001.jpg",
+      "originalId": "train/0001/0001_c1_001.jpg"
+    },
+    {
+      "id": "5c9b89b88a647b6e2dc71f2da321e0cef00942cadd60489d8ea32c2cdfd1ee33",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0001/0001_c2_001.jpg",
+      "originalId": "train/0001/0001_c2_001.jpg"
+    },
+    {
+      "id": "fa3e5f9f068e4aa9c8ecd894ce9d0e98437d85582e969630fdbf4d87f8292fa9",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0001/0001_c3_001.jpg",
+      "originalId": "train/0001/0001_c3_001.jpg"
+    },
+    {
+      "id": "7746b37d6c34a827766aeef50c1f7bc1ca6ed5790ad60d43089677707d58bf6b",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0002/0002_c1_001.jpg",
+      "originalId": "train/0002/0002_c1_001.jpg"
+    },
+    {
+      "id": "f44ccea366ae5b2f8b1b73ef3a48a36c86427312b905c6423c8c3f1797e0269b",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0002/0002_c2_001.jpg",
+      "originalId": "train/0002/0002_c2_001.jpg"
+    },
+    {
+      "id": "57d1163e89a0c4329d7ed51bad790d69d45a8c8a11d479e9d075a2c52c5796cd",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0002/0002_c3_001.jpg",
+      "originalId": "train/0002/0002_c3_001.jpg"
+    },
+    {
+      "id": "42979f52fc746a82331090da8f10db62091bfd2975f3ac3662dd85b8b4b1e368",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0003/0003_c1_001.jpg",
+      "originalId": "train/0003/0003_c1_001.jpg"
+    },
+    {
+      "id": "b5265819c8300697fde022158dafc9a5e8c0692be8c01b2764cd0bb6a4640dac",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0003/0003_c2_001.jpg",
+      "originalId": "train/0003/0003_c2_001.jpg"
+    },
+    {
+      "id": "8a1ed64c6537a426c86b71d427f67627b5eef8016c0a1e32b44f32c427f62f49",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0003/0003_c3_001.jpg",
+      "originalId": "train/0003/0003_c3_001.jpg"
+    },
+    {
+      "id": "61c5c03b974bda7ba03015314ed1bf4a2f3e22ff9b4e540f3a59407a4813de0e",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0004/0004_c1_001.jpg",
+      "originalId": "train/0004/0004_c1_001.jpg"
+    },
+    {
+      "id": "61e00c5879f52f8d5f3eaf274716a3ae91e1cd205894fd7a0958523a315142f9",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0004/0004_c2_001.jpg",
+      "originalId": "train/0004/0004_c2_001.jpg"
+    },
+    {
+      "id": "4e0e8e64bf14f886beeb128ebd1802fc82d2d3591e689c5f5c9d52457b3958dc",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0004/0004_c3_001.jpg",
+      "originalId": "train/0004/0004_c3_001.jpg"
+    },
+    {
+      "id": "a755497b169fd16f5485fef3c8ab889bdf9c6bddf0c1efabd782979acdbdd29e",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0005/0005_c1_001.jpg",
+      "originalId": "train/0005/0005_c1_001.jpg"
+    },
+    {
+      "id": "6961787d4c43be26e208fbf7205a3279edb28616e4150c03141e8a35691019df",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0005/0005_c2_001.jpg",
+      "originalId": "train/0005/0005_c2_001.jpg"
+    },
+    {
+      "id": "8a020689daacf6a9d48b183a058ee0203fc5df8e1999e47a4e39513c3731516c",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0005/0005_c3_001.jpg",
+      "originalId": "train/0005/0005_c3_001.jpg"
+    },
+    {
+      "id": "c0e861dd12c0fdb98ac91f500708b3dec625219da40cd546e436da2a8da8297b",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0006/0006_c1_001.jpg",
+      "originalId": "train/0006/0006_c1_001.jpg"
+    },
+    {
+      "id": "319117ea735caa39036b19c357af9c0db0299c4caafcb8b31b59c8ff0ef02ff4",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0006/0006_c2_001.jpg",
+      "originalId": "train/0006/0006_c2_001.jpg"
+    },
+    {
+      "id": "e77abdb2281f2b7011773c8395043adcb2877d129fb43f6f1eeb58999c9a6057",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0006/0006_c3_001.jpg",
+      "originalId": "train/0006/0006_c3_001.jpg"
+    },
+    {
+      "id": "8bec28215aa457f28b5a491bde4403009ce0baf9232e3355acbefc5e769a75d4",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0007/0007_c1_001.jpg",
+      "originalId": "train/0007/0007_c1_001.jpg"
+    },
+    {
+      "id": "d59be741e9d04336c672f19abfd4ff6c7e2068da33b2271e61006f6c1fbc72e1",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0007/0007_c2_001.jpg",
+      "originalId": "train/0007/0007_c2_001.jpg"
+    },
+    {
+      "id": "404e0cc419dbc38048e7fabbae45296b235077fffcb1a31a7a3b8529bececfeb",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0007/0007_c3_001.jpg",
+      "originalId": "train/0007/0007_c3_001.jpg"
+    },
+    {
+      "id": "50aa7759619515f5f45aa8c5f7e1f8943082494c0ab024cd393ced0239ce5c8d",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0008/0008_c1_001.jpg",
+      "originalId": "train/0008/0008_c1_001.jpg"
+    },
+    {
+      "id": "819e9cc4bc4d1046b623f38dd3c283fe0cdbe5c3cbc9fe2de3fe8a3924cf508e",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0008/0008_c2_001.jpg",
+      "originalId": "train/0008/0008_c2_001.jpg"
+    },
+    {
+      "id": "95531515fbe89f5a85631c2b33b033e28445de43284f15c0f3d197c2d873f459",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0008/0008_c3_001.jpg",
+      "originalId": "train/0008/0008_c3_001.jpg"
+    },
+    {
+      "id": "46595b06879913cde3ca9f2ac2df817ae704785ef87eadb63dd4fe7be373ce2e",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0009/0009_c1_001.jpg",
+      "originalId": "train/0009/0009_c1_001.jpg"
+    },
+    {
+      "id": "353a8c3cf50d007275b0801adef61ba8ba853cec6622fd772f3a776f788efb8b",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0009/0009_c2_001.jpg",
+      "originalId": "train/0009/0009_c2_001.jpg"
+    },
+    {
+      "id": "77cff58b1111fbef405c5c75d1546dcad8fdbedcddd57c6b3b93b0ce348ffc8c",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0009/0009_c3_001.jpg",
+      "originalId": "train/0009/0009_c3_001.jpg"
+    },
+    {
+      "id": "0cba5a98885a578cda6a49adeb601290b95b36c0a14bac6416484bca134808b1",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0010/0010_c1_001.jpg",
+      "originalId": "train/0010/0010_c1_001.jpg"
+    },
+    {
+      "id": "3dc11859aa8e94dd7e5339e62d7c1c15a32da983f5068143c384abbfcbcb938f",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0010/0010_c2_001.jpg",
+      "originalId": "train/0010/0010_c2_001.jpg"
+    },
+    {
+      "id": "974051dac4dba2f778c5b04898e988d06479abe4c91e1c3082556d785044fb4e",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0010/0010_c3_001.jpg",
+      "originalId": "train/0010/0010_c3_001.jpg"
+    },
+    {
+      "id": "f2ff5310bda9303852565287e772f6f70889ed0c0880c2e57672e5e5339933e6",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0011/0011_c1_001.jpg",
+      "originalId": "train/0011/0011_c1_001.jpg"
+    },
+    {
+      "id": "e246570e278c090662c9197685d250cdf66e27006b958470c0cea28d81ee741e",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0011/0011_c2_001.jpg",
+      "originalId": "train/0011/0011_c2_001.jpg"
+    },
+    {
+      "id": "04e36aac1ad63f6267f439ca32422aabfd433b26e42ba0e1ec9bf17b75975bfb",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0011/0011_c3_001.jpg",
+      "originalId": "train/0011/0011_c3_001.jpg"
+    },
+    {
+      "id": "7c80ea2393b598b9906cc8602e903a4552c189adbab8a2a250717e897b42b816",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0012/0012_c1_001.jpg",
+      "originalId": "train/0012/0012_c1_001.jpg"
+    },
+    {
+      "id": "da0f3b0608edb135eb3eca7e6379ff0cf17598c4bbbe09a965ce92d38e833099",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0012/0012_c2_001.jpg",
+      "originalId": "train/0012/0012_c2_001.jpg"
+    },
+    {
+      "id": "0643d9a1099e932c265f87154e34276245f4784de26ca766c2d1a71d9646b2dd",
+      "datasetId": "msmt17",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/train/0012/0012_c3_001.jpg",
+      "originalId": "train/0012/0012_c3_001.jpg"
+    },
+    {
+      "id": "df13f5ce3e4dbc3cb9df4a60502664523366aacf63abe0c58d7d00b5a40085e7",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0001",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0001/0001_c4_001.jpg",
+      "originalId": "test/0001/0001_c4_001.jpg"
+    },
+    {
+      "id": "30bcdaa03104a9c224eb5e28aab32cc1bb1646e099d9a1f563c033a7b5135641",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0002",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0002/0002_c4_001.jpg",
+      "originalId": "test/0002/0002_c4_001.jpg"
+    },
+    {
+      "id": "6da0ae2792395355a68af0992319a8ad022769a2d61ab4e530bb6253bd3c591c",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0003",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0003/0003_c4_001.jpg",
+      "originalId": "test/0003/0003_c4_001.jpg"
+    },
+    {
+      "id": "fec33a6494ed879f808db31f6865642d77695cbd0ce20f4cd5317c1c79fb6d22",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0004",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0004/0004_c4_001.jpg",
+      "originalId": "test/0004/0004_c4_001.jpg"
+    },
+    {
+      "id": "727f8aa07d25841b8efddc86a8805f86aaf154d5494045d826a0668e639d9503",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0005",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0005/0005_c4_001.jpg",
+      "originalId": "test/0005/0005_c4_001.jpg"
+    },
+    {
+      "id": "41063de35b09aae43bcbd04da3ef1ca585a64d7ed51396d0dd96a85517fd72c0",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0006",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0006/0006_c4_001.jpg",
+      "originalId": "test/0006/0006_c4_001.jpg"
+    },
+    {
+      "id": "a49bf795df8f64e7e553250bb5f1ed67433294cae9151c73db5ce08aa2df2ea7",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0007",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0007/0007_c4_001.jpg",
+      "originalId": "test/0007/0007_c4_001.jpg"
+    },
+    {
+      "id": "a019f9f7e0943b360690d1013a82d6c8722ad4f2338ceeea8f0c20df9c5fa82a",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0008",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0008/0008_c4_001.jpg",
+      "originalId": "test/0008/0008_c4_001.jpg"
+    },
+    {
+      "id": "d867d0478eacde0451ddf64f36934535dd3c11adaa7348789db5f755ba6e9491",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0009",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0009/0009_c4_001.jpg",
+      "originalId": "test/0009/0009_c4_001.jpg"
+    },
+    {
+      "id": "3185cd5a622ab569dd62902dc1d8d1805f582c5770382e8ec42cdb7c10d36aa3",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0010",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0010/0010_c4_001.jpg",
+      "originalId": "test/0010/0010_c4_001.jpg"
+    },
+    {
+      "id": "5855bef99217dfa7fabefaf7e35a38ca6f04a6fa35792894e14a91acc207d041",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0011",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0011/0011_c4_001.jpg",
+      "originalId": "test/0011/0011_c4_001.jpg"
+    },
+    {
+      "id": "523ff092979d73b2aafef51f3e85a5c8344060972c803f905bc7fd621e81a304",
+      "datasetId": "msmt17",
+      "split": "query",
+      "identityId": "0012",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0012/0012_c4_001.jpg",
+      "originalId": "test/0012/0012_c4_001.jpg"
+    },
+    {
+      "id": "08bf6286943221a87d5563a17e910a4699512317b46c623f2b57d9c5265340df",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0001",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0001/0001_c5_001.jpg",
+      "originalId": "test/0001/0001_c5_001.jpg"
+    },
+    {
+      "id": "8dc1c50f52dba742a44a631236606968dded209f4c8d984c50f24f74c2946128",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0002",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0002/0002_c5_001.jpg",
+      "originalId": "test/0002/0002_c5_001.jpg"
+    },
+    {
+      "id": "4738b04710fb7bc9b22d219e9cdab3e9acbf4189e1d8ad6c16c2489ae5518223",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0003",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0003/0003_c5_001.jpg",
+      "originalId": "test/0003/0003_c5_001.jpg"
+    },
+    {
+      "id": "43a32e95b6c76cc4da5a0595e843f1c44b3a3a30daf7a4b42b24411669148197",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0004",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0004/0004_c5_001.jpg",
+      "originalId": "test/0004/0004_c5_001.jpg"
+    },
+    {
+      "id": "937df851d2f60d5dbb3033a4a9e47cfae6982d65d45a448c9adfbcc8d090d362",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0005",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0005/0005_c5_001.jpg",
+      "originalId": "test/0005/0005_c5_001.jpg"
+    },
+    {
+      "id": "dededf915da9ab5264f59f61499eafe0b6fcf26752ee77d2f2c5ec371c8d7513",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0006",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0006/0006_c5_001.jpg",
+      "originalId": "test/0006/0006_c5_001.jpg"
+    },
+    {
+      "id": "b55f3c20d8d6d0db908ea2d58f9e3f45dee7c524962aaf194179413413eb8053",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0007",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0007/0007_c5_001.jpg",
+      "originalId": "test/0007/0007_c5_001.jpg"
+    },
+    {
+      "id": "dfbab8fd20dade97743cd2573c9b08e8c67be535089c06e466c867dc305accd5",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0008",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0008/0008_c5_001.jpg",
+      "originalId": "test/0008/0008_c5_001.jpg"
+    },
+    {
+      "id": "7bd3217ba74153d61b3dca849677b364ffa8834a99b88d6a0740d63324e76890",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0009",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0009/0009_c5_001.jpg",
+      "originalId": "test/0009/0009_c5_001.jpg"
+    },
+    {
+      "id": "04f93ae5feaaebfe09b5c375dd0be418463ec42c59acaa68238cead3f5588630",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0010",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0010/0010_c5_001.jpg",
+      "originalId": "test/0010/0010_c5_001.jpg"
+    },
+    {
+      "id": "f3e81a22c3fbd3c8c13464e280e682fe3293afd23abc760e43fa0ce9d3feed07",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0011",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0011/0011_c5_001.jpg",
+      "originalId": "test/0011/0011_c5_001.jpg"
+    },
+    {
+      "id": "56660b986056bf24c426d71b539e1035ccbec29f54c011d68482dbb3dadd3a74",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0012",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0012/0012_c5_001.jpg",
+      "originalId": "test/0012/0012_c5_001.jpg"
+    },
+    {
+      "id": "08bf6286943221a87d5563a17e910a4699512317b46c623f2b57d9c5265340df",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0001",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0001/0001_c5_001.jpg",
+      "originalId": "test/0001/0001_c5_001.jpg"
+    },
+    {
+      "id": "8dc1c50f52dba742a44a631236606968dded209f4c8d984c50f24f74c2946128",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0002",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0002/0002_c5_001.jpg",
+      "originalId": "test/0002/0002_c5_001.jpg"
+    },
+    {
+      "id": "4738b04710fb7bc9b22d219e9cdab3e9acbf4189e1d8ad6c16c2489ae5518223",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0003",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0003/0003_c5_001.jpg",
+      "originalId": "test/0003/0003_c5_001.jpg"
+    },
+    {
+      "id": "43a32e95b6c76cc4da5a0595e843f1c44b3a3a30daf7a4b42b24411669148197",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0004",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0004/0004_c5_001.jpg",
+      "originalId": "test/0004/0004_c5_001.jpg"
+    },
+    {
+      "id": "937df851d2f60d5dbb3033a4a9e47cfae6982d65d45a448c9adfbcc8d090d362",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0005",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0005/0005_c5_001.jpg",
+      "originalId": "test/0005/0005_c5_001.jpg"
+    },
+    {
+      "id": "dededf915da9ab5264f59f61499eafe0b6fcf26752ee77d2f2c5ec371c8d7513",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0006",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0006/0006_c5_001.jpg",
+      "originalId": "test/0006/0006_c5_001.jpg"
+    },
+    {
+      "id": "b55f3c20d8d6d0db908ea2d58f9e3f45dee7c524962aaf194179413413eb8053",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0007",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0007/0007_c5_001.jpg",
+      "originalId": "test/0007/0007_c5_001.jpg"
+    },
+    {
+      "id": "dfbab8fd20dade97743cd2573c9b08e8c67be535089c06e466c867dc305accd5",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0008",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0008/0008_c5_001.jpg",
+      "originalId": "test/0008/0008_c5_001.jpg"
+    },
+    {
+      "id": "7bd3217ba74153d61b3dca849677b364ffa8834a99b88d6a0740d63324e76890",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0009",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0009/0009_c5_001.jpg",
+      "originalId": "test/0009/0009_c5_001.jpg"
+    },
+    {
+      "id": "04f93ae5feaaebfe09b5c375dd0be418463ec42c59acaa68238cead3f5588630",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0010",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0010/0010_c5_001.jpg",
+      "originalId": "test/0010/0010_c5_001.jpg"
+    },
+    {
+      "id": "f3e81a22c3fbd3c8c13464e280e682fe3293afd23abc760e43fa0ce9d3feed07",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0011",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0011/0011_c5_001.jpg",
+      "originalId": "test/0011/0011_c5_001.jpg"
+    },
+    {
+      "id": "56660b986056bf24c426d71b539e1035ccbec29f54c011d68482dbb3dadd3a74",
+      "datasetId": "msmt17",
+      "split": "gallery",
+      "identityId": "0012",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17/test/0012/0012_c5_001.jpg",
+      "originalId": "test/0012/0012_c5_001.jpg"
+    }
+  ]
+}

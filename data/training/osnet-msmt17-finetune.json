@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "dataset": "msmt17",
+  "root": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/msmt17",
+  "startedAt": "2026-10-23T11:28:18.973306+00:00",
+  "completedAt": "2026-10-23T11:28:27.943024+00:00",
+  "epochs": 2,
+  "batchSize": 8,
+  "seed": 42,
+  "device": "cpu",
+  "startingCheckpointSha256": "fe2d63f9157c28a4a8d8ca29bec12d5b2988ac0346d712025789ea9174968e79",
+  "selectedCheckpoint": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/training/osnet-msmt17-finetune.pth",
+  "selectedCheckpointSha256": "3ba1708fb09006f75ea53fb9fdaaa2ea542bb335ab4adbbcd4c220f3f7ab6744",
+  "trainIdentities": 12,
+  "trainSamples": 36,
+  "heldOutSamples": 32,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 2.2271370357937283
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 1.5498183568318684
+    }
+  ],
+  "warnings": [],
+  "activation": "not_activated",
+  "note": "Training finished without changing the active production model."
+}

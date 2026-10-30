@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "dataset": "mars",
+  "root": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars",
+  "startedAt": "2026-10-23T11:28:38.093142+00:00",
+  "completedAt": "2026-10-23T11:28:53.475406+00:00",
+  "epochs": 2,
+  "batchSize": 8,
+  "seed": 42,
+  "device": "cpu",
+  "startingCheckpointSha256": "fe2d63f9157c28a4a8d8ca29bec12d5b2988ac0346d712025789ea9174968e79",
+  "selectedCheckpoint": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/training/osnet-mars-finetune.pth",
+  "selectedCheckpointSha256": "8fb5905895eb4b2647f2edd25838f5fc35ca25a79cc7dc9b1db1fd43be08eb50",
+  "trainIdentities": 12,
+  "trainSamples": 72,
+  "heldOutSamples": 24,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 1.936608182059394
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 1.3390797641542223
+    }
+  ],
+  "warnings": [],
+  "activation": "not_activated",
+  "note": "Training finished without changing the active production model."
+}

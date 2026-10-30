@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "VisionTrace AI"
+description = "A visual investigation workspace for authorized footage. Search indexed source videos by person appearance, manage ingestion jobs, and inspect matching frames with source timestamps."
+version = "1.0.0"
+id = "artifacts/visiontrace"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24746
+
+[services.development]
+run = "pnpm --filter @workspace/visiontrace run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/visiontrace", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/visiontrace/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24746"
+BASE_PATH = "/"

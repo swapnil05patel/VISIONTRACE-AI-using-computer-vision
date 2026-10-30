@@ -1,0 +1,748 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: VisionTrace authorized-footage visual search and indexing API.
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: VisionTrace
+    description: Dataset, video-ingestion, inference and search operations.
+  - name: Storage
+    description: Private upload storage.
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /storage/uploads/request-url:
+    post:
+      operationId: requestUploadUrl
+      tags: [Storage]
+      summary: Request a private upload URL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UploadUrlRequest"
+      responses:
+        "200":
+          description: Presigned URL created.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UploadUrlResponse"
+        "400":
+          description: Invalid upload metadata.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+        "401":
+          description: Authentication required.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+  /visiontrace/overview:
+    get:
+      operationId: getVisionTraceOverview
+      tags: [VisionTrace]
+      summary: Get live library, job, model and dataset status
+      responses:
+        "200":
+          description: Live application overview.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VisionTraceOverview"
+  /visiontrace/runtime:
+    get:
+      operationId: getVisionRuntime
+      tags: [VisionTrace]
+      summary: Report verified inference and vector-search capabilities
+      responses:
+        "200":
+          description: Runtime capability status, including explicit unavailable reasons.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VisionRuntime"
+  /visiontrace/datasets:
+    get:
+      operationId: listDatasets
+      tags: [VisionTrace]
+      summary: List supported Re-ID dataset adapters and access status
+      responses:
+        "200":
+          description: Dataset adapters and their actual availability.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/DatasetAdapter"
+  /visiontrace/datasets/imports:
+    post:
+      operationId: startDatasetImport
+      tags: [VisionTrace]
+      summary: Start a bounded import from a configured, authorized dataset root
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DatasetImportInput"
+      responses:
+        "202":
+          description: Import job queued.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProcessingJob"
+        "400":
+          description: Invalid import limits or unsupported split.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+        "409":
+          description: Dataset is not configured or an import is already running.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+  /visiontrace/videos:
+    get:
+      operationId: listVideos
+      tags: [VisionTrace]
+      summary: List indexed source videos
+      responses:
+        "200":
+          description: Video library.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/SourceVideo"
+    post:
+      operationId: registerVideo
+      tags: [VisionTrace]
+      summary: Register an uploaded source video and queue indexing
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VideoRegistrationInput"
+      responses:
+        "202":
+          description: Video registered and indexing queued.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VideoRegistrationResponse"
+        "400":
+          description: Invalid or unsupported video metadata.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+        "409":
+          description: The same object is already registered.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+  /visiontrace/videos/details:
+    post:
+      operationId: getVideo
+      tags: [VisionTrace]
+      summary: Get source video metadata and indexing status
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VideoLookupInput"
+      responses:
+        "200":
+          description: Video record.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SourceVideo"
+        "404":
+          description: Video not found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+  /visiontrace/videos/frames:
+    post:
+      operationId: listVideoFrames
+      tags: [VisionTrace]
+      summary: List indexed people and frames for a source video
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VideoFramesInput"
+      responses:
+        "200":
+          description: Indexed frames and detections.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/IndexedFrame"
+  /visiontrace/cameras:
+    get:
+      operationId: listCameras
+      tags: [VisionTrace]
+      summary: List known camera IDs from source metadata
+      responses:
+        "200":
+          description: Camera IDs and indexed video counts.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CameraSummary"
+  /visiontrace/images/detections:
+    post:
+      operationId: detectPeopleInImage
+      tags: [VisionTrace]
+      summary: Detect selectable people in an uploaded query image
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ImageDetectionInput"
+      responses:
+        "200":
+          description: Real detector results or an empty detection list.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageDetectionResponse"
+        "422":
+          description: The image contains no detectable person.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+        "503":
+          description: Required detector weights or runtime are unavailable.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+  /visiontrace/search/image:
+    post:
+      operationId: searchImage
+      tags: [VisionTrace]
+      summary: Search indexed footage from one selected image person
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ImageSearchInput"
+      responses:
+        "200":
+          description: Actual visually similar indexed frames.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SearchResponse"
+        "400":
+          description: Invalid query selection or filter.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+        "503":
+          description: Search model or vector index unavailable.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+  /visiontrace/search/video:
+    post:
+      operationId: searchVideo
+      tags: [VisionTrace]
+      summary: Queue person-level search from a query video
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VideoSearchInput"
+      responses:
+        "202":
+          description: Video search job queued.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProcessingJob"
+        "400":
+          description: Invalid query video or filters.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+        "503":
+          description: Video inference or vector index unavailable.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+  /visiontrace/jobs/status:
+    post:
+      operationId: getProcessingJob
+      tags: [VisionTrace]
+      summary: Get persisted processing or search job status
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JobLookupInput"
+      responses:
+        "200":
+          description: Job state, progress, and completed search results when available.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProcessingJob"
+        "404":
+          description: Job not found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    ErrorEnvelope:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string
+    UploadUrlRequest:
+      type: object
+      required: [name, size, contentType]
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 255
+        size:
+          type: integer
+          minimum: 1
+        contentType:
+          type: string
+          minLength: 1
+          maxLength: 128
+    UploadUrlResponse:
+      type: object
+      required: [uploadURL, objectPath]
+      properties:
+        uploadURL:
+          type: string
+        objectPath:
+          type: string
+        metadata:
+          $ref: "#/components/schemas/UploadUrlRequest"
+    VisionRuntime:
+      type: object
+      required: [status, detector, reid, vectorSearch, device, verifiedAt, limitations]
+      properties:
+        status:
+          type: string
+          enum: [ready, partial, unavailable]
+        detector:
+          type: string
+        reid:
+          type: string
+        vectorSearch:
+          type: string
+        device:
+          type: string
+          enum: [cpu, cuda, unavailable]
+        verifiedAt:
+          type: ["string", "null"]
+          format: date-time
+        limitations:
+          type: array
+          items:
+            type: string
+    DatasetAdapter:
+      type: object
+      required: [id, name, adapterStatus, accessNote, configured, importedItems]
+      properties:
+        id:
+          type: string
+          enum: [mars, msmt17, market1501]
+        name:
+          type: string
+        adapterStatus:
+          type: string
+          enum: [supported, planned, unavailable]
+        accessNote:
+          type: string
+        configured:
+          type: boolean
+        importedItems:
+          type: integer
+          minimum: 0
+    DatasetImportInput:
+      type: object
+      required: [datasetId, split, maxItems, purpose]
+      properties:
+        datasetId:
+          type: string
+          enum: [mars, msmt17, market1501]
+        split:
+          type: string
+          enum: [train, query, gallery, test]
+        maxItems:
+          type: integer
+          minimum: 1
+          maximum: 10000
+        purpose:
+          type: string
+          enum: [benchmark, index]
+    VideoLookupInput:
+      type: object
+      required: [videoId]
+      properties:
+        videoId:
+          type: string
+          format: uuid
+    VideoFramesInput:
+      type: object
+      required: [videoId]
+      properties:
+        videoId:
+          type: string
+          format: uuid
+        limit:
+          type: integer
+          minimum: 1
+          maximum: 200
+          default: 50
+    JobLookupInput:
+      type: object
+      required: [jobId]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+    VisionTraceOverview:
+      type: object
+      required: [indexedVideos, indexedFrames, indexedPeople, activeJobs, completedSearches, runtime, datasets, recentJobs]
+      properties:
+        indexedVideos:
+          type: integer
+          minimum: 0
+        indexedFrames:
+          type: integer
+          minimum: 0
+        indexedPeople:
+          type: integer
+          minimum: 0
+        activeJobs:
+          type: integer
+          minimum: 0
+        completedSearches:
+          type: integer
+          minimum: 0
+        runtime:
+          $ref: "#/components/schemas/VisionRuntime"
+        datasets:
+          type: array
+          items:
+            $ref: "#/components/schemas/DatasetAdapter"
+        recentJobs:
+          type: array
+          items:
+            $ref: "#/components/schemas/ProcessingJob"
+    ProcessingJob:
+      type: object
+      required: [id, kind, status, progress, stage, createdAt, updatedAt]
+      properties:
+        id:
+          type: string
+          format: uuid
+        kind:
+          type: string
+          enum: [video_index, dataset_import, image_search, video_search]
+        status:
+          type: string
+          enum: [queued, running, completed, failed]
+        progress:
+          type: integer
+          minimum: 0
+          maximum: 100
+        stage:
+          type: string
+        sourceName:
+          type: ["string", "null"]
+        error:
+          type: ["string", "null"]
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        result:
+          oneOf:
+            - $ref: "#/components/schemas/SearchResponse"
+            - type: "null"
+    SourceVideo:
+      type: object
+      required: [id, name, objectPath, cameraId, durationSeconds, status, frameCount, personCount, createdAt, updatedAt]
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        objectPath:
+          type: string
+        cameraId:
+          type: ["string", "null"]
+        durationSeconds:
+          type: ["number", "null"]
+        status:
+          type: string
+          enum: [queued, processing, indexed, failed]
+        frameCount:
+          type: integer
+          minimum: 0
+        personCount:
+          type: integer
+          minimum: 0
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    VideoRegistrationInput:
+      type: object
+      required: [name, objectPath]
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 255
+        objectPath:
+          type: string
+          minLength: 1
+          maxLength: 1024
+        cameraId:
+          type: ["string", "null"]
+          maxLength: 128
+        recordedAt:
+          type: ["string", "null"]
+          format: date-time
+    VideoRegistrationResponse:
+      type: object
+      required: [video, job]
+      properties:
+        video:
+          $ref: "#/components/schemas/SourceVideo"
+        job:
+          $ref: "#/components/schemas/ProcessingJob"
+    IndexedFrame:
+      type: object
+      required: [id, videoId, frameNumber, timestampSeconds, thumbnailPath, detections]
+      properties:
+        id:
+          type: string
+          format: uuid
+        videoId:
+          type: string
+          format: uuid
+        frameNumber:
+          type: integer
+          minimum: 0
+        timestampSeconds:
+          type: number
+          minimum: 0
+        thumbnailPath:
+          type: ["string", "null"]
+        detections:
+          type: array
+          items:
+            $ref: "#/components/schemas/PersonDetection"
+    PersonDetection:
+      type: object
+      required: [id, detectionIndex, bbox, detectorScore, cropPath]
+      properties:
+        id:
+          type: string
+        detectionIndex:
+          type: integer
+          minimum: 0
+        bbox:
+          type: array
+          minItems: 4
+          maxItems: 4
+          items:
+            type: number
+        detectorScore:
+          type: number
+          minimum: 0
+          maximum: 1
+        cropPath:
+          type: ["string", "null"]
+        trackletId:
+          type: ["string", "null"]
+    ImageDetectionInput:
+      type: object
+      required: [objectPath]
+      properties:
+        objectPath:
+          type: string
+          minLength: 1
+          maxLength: 1024
+    ImageDetectionResponse:
+      type: object
+      required: [detections, model]
+      properties:
+        detections:
+          type: array
+          items:
+            $ref: "#/components/schemas/PersonDetection"
+        model:
+          type: string
+    SearchFilters:
+      type: object
+      properties:
+        cameraId:
+          type: ["string", "null"]
+        from:
+          type: ["string", "null"]
+          format: date-time
+        to:
+          type: ["string", "null"]
+          format: date-time
+        timeFrom:
+          type: ["string", "null"]
+          pattern: "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+        timeTo:
+          type: ["string", "null"]
+          pattern: "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+        topK:
+          type: integer
+          minimum: 1
+          maximum: 100
+          default: 10
+    ImageSearchInput:
+      type: object
+      required: [objectPath, detectionIndex]
+      properties:
+        objectPath:
+          type: string
+          minLength: 1
+          maxLength: 1024
+        detectionIndex:
+          type: integer
+          minimum: 0
+        filters:
+          $ref: "#/components/schemas/SearchFilters"
+    VideoSearchInput:
+      type: object
+      required: [objectPath]
+      properties:
+        objectPath:
+          type: string
+          minLength: 1
+          maxLength: 1024
+        filters:
+          $ref: "#/components/schemas/SearchFilters"
+    SearchResponse:
+      type: object
+      required: [queryMode, results, resultCount, rankingNote]
+      properties:
+        queryMode:
+          type: string
+          enum: [image, video]
+        results:
+          type: array
+          items:
+            $ref: "#/components/schemas/SearchHit"
+        resultCount:
+          type: integer
+          minimum: 0
+        rankingNote:
+          type: string
+    SearchHit:
+      type: object
+      required: [id, videoId, sourceName, cameraId, frameNumber, timestampSeconds, similarity, thumbnailPath, videoPath]
+      properties:
+        id:
+          type: string
+          format: uuid
+        videoId:
+          type: string
+          format: uuid
+        sourceName:
+          type: string
+        cameraId:
+          type: ["string", "null"]
+        frameNumber:
+          type: integer
+          minimum: 0
+        timestampSeconds:
+          type: number
+          minimum: 0
+        similarity:
+          type: number
+          minimum: -1
+          maximum: 1
+        thumbnailPath:
+          type: ["string", "null"]
+        videoPath:
+          type: string
+    CameraSummary:
+      type: object
+      required: [id, videoCount]
+      properties:
+        id:
+          type: string
+        videoCount:
+          type: integer
+          minimum: 0
+

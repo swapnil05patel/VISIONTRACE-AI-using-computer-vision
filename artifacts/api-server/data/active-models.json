@@ -1,0 +1,18 @@
+{
+  "detector": {
+    "name": "yolo11n",
+    "type": "detector",
+    "status": "active",
+    "checksum": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "path": "models/yolo11n.pt"
+  },
+  "reid": {
+    "name": "osnet_x1_0",
+    "type": "reid",
+    "status": "active",
+    "checksum": "48df972f72887b95cf3b43b3a07c3a7d2398381aea0f9cae64a7ef11d512b727",
+    "path": "models/osnet_x1_0.pth",
+    "embeddingSpace": "osnet_x1_0_imagenet_l2",
+    "embeddingDimension": 512
+  }
+}

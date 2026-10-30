@@ -1,0 +1,286 @@
+{
+  "Warehouse_001/videos/Camera_0000.mp4": {
+    "objectPath": "/objects/uploads/a3f4a43e-a5fc-4ed2-b781-a1256956a30b",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:22.483Z",
+    "videoId": "23afbbc1-13df-4007-ba69-e619cd791048"
+  },
+  "Warehouse_001/videos/Camera_0001.mp4": {
+    "objectPath": "/objects/uploads/c184b274-9a3e-45dd-b44a-20a88aef0a09",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:25.086Z",
+    "videoId": "5f7be342-1812-44f1-b177-db05f11beb3a"
+  },
+  "Warehouse_001/videos/Camera_0002.mp4": {
+    "objectPath": "/objects/uploads/7e782fef-b599-4f0a-8689-dd93f79043d9",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:26.639Z",
+    "videoId": "81065b8a-d5ce-4009-826b-1efa9fde44ee"
+  },
+  "Warehouse_001/videos/Camera_0003.mp4": {
+    "objectPath": "/objects/uploads/3eb84958-fdb0-4818-a51b-1c5f70f4ed1e",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:28.354Z",
+    "videoId": "67f5c661-4650-4d05-92f5-b74ad34ad739"
+  },
+  "Warehouse_001/videos/Camera_0004.mp4": {
+    "objectPath": "/objects/uploads/02b84c82-75c5-4f58-bd3a-9bff21972365",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:32.642Z",
+    "videoId": "63bdef2e-3777-4081-a87b-30c6bc415ce6"
+  },
+  "Warehouse_001/videos/Camera_0005.mp4": {
+    "objectPath": "/objects/uploads/05cfc995-28a3-4b17-8831-18d04086eaf7",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:35.522Z",
+    "videoId": "0eda29ee-8f9a-457f-85c1-917662acf928"
+  },
+  "Warehouse_001/videos/Camera_0006.mp4": {
+    "objectPath": "/objects/uploads/ed14f511-6e32-4411-8d5e-622821d78489",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:41.134Z",
+    "videoId": "7e1fef6d-8e8e-4885-b207-592d7d56b291"
+  },
+  "Warehouse_001/videos/Camera_0007.mp4": {
+    "objectPath": "/objects/uploads/970972f1-6517-4f14-afe2-d60c3755056c",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:45.503Z",
+    "videoId": "5fdba62a-a95d-414c-8efd-0725198fe0e2"
+  },
+  "Warehouse_001/videos/Camera_0008.mp4": {
+    "objectPath": "/objects/uploads/2c3d892d-235e-4f00-875b-b76789d0a6f7",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:40:53.625Z",
+    "videoId": "bd08ecb1-2be5-4be0-a559-06cf1ad79b73"
+  },
+  "Warehouse_001/videos/Camera_0009.mp4": {
+    "objectPath": "/objects/uploads/1c975d0d-fb72-4f1f-b197-3bb9ac9cf25f",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:18.160Z",
+    "videoId": "56a17107-fffa-4f27-940e-fa5504c4be7e"
+  },
+  "Warehouse_001/videos/Camera_0010.mp4": {
+    "objectPath": "/objects/uploads/8012e2e4-5b36-408a-b188-cb281611e0f5",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:18.995Z",
+    "videoId": "dd98b38f-8c65-4312-b316-ee6ebcf97436"
+  },
+  "Warehouse_001/videos/Camera_0011.mp4": {
+    "objectPath": "/objects/uploads/739d7195-847e-4bc7-939c-0fa513d3a271",
+    "state": "registered",
+    "registeredAt": "2026-10-27T08:42:25.261Z",
+    "videoId": "ca2e9619-378a-46b6-8713-9b15898198b5"
+  },
+  "Warehouse_001/videos/Camera_0012.mp4": {
+    "objectPath": "/objects/uploads/a1227b16-f328-479e-a433-a29ab742611f",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:19.700Z",
+    "videoId": "eecff553-bf37-41fc-9702-8a04c574ca26"
+  },
+  "Warehouse_001/videos/Camera_0013.mp4": {
+    "objectPath": "/objects/uploads/4d6b50ba-18f8-4d9b-95f7-f78be249d504",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:20.917Z",
+    "videoId": "a2eb655f-82d5-4aa9-bcb5-96768be2cee3"
+  },
+  "Warehouse_001/videos/Camera_0014.mp4": {
+    "objectPath": "/objects/uploads/4b4257e9-047c-4316-a251-2f0691087be9",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:23.697Z",
+    "videoId": "65c190ec-eb1d-40b9-895d-b68891e0b8ed"
+  },
+  "Warehouse_001/videos/Camera_0015.mp4": {
+    "objectPath": "/objects/uploads/8311b6ac-e872-4cc0-b3fd-15f59cc0c3ef",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:25.732Z",
+    "videoId": "4b6c0008-4889-46ce-beca-2d3c3a64d8de"
+  },
+  "Warehouse_001/videos/Camera_0016.mp4": {
+    "objectPath": "/objects/uploads/d3146fc7-1001-42cf-90ca-6caa065b0e93",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:29.774Z",
+    "videoId": "8d25c3da-8bb9-4f9b-8f20-4b7c06a49cc7"
+  },
+  "Warehouse_001/videos/Camera_0017.mp4": {
+    "objectPath": "/objects/uploads/d6a48a3e-c69a-4f5c-86ee-9ba76a0f7576",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:37.917Z",
+    "videoId": "4b72a47e-3128-4b08-81f5-344f65ba6b9b"
+  },
+  "Warehouse_001/videos/Camera_0018.mp4": {
+    "objectPath": "/objects/uploads/e7f6d342-0d9b-4176-bb4a-98f6394970ac",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:43.676Z",
+    "videoId": "00d3a01c-7135-40d8-a526-13d0466c955a"
+  },
+  "Warehouse_001/videos/Camera_0019.mp4": {
+    "objectPath": "/objects/uploads/d74c06e5-485b-4ec9-9953-5c2cca33504b",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:10:51.175Z",
+    "videoId": "0ec001a1-9fa8-4f6e-a47d-bdbadbbfa8e7"
+  },
+  "Warehouse_001/videos/Camera_0020.mp4": {
+    "objectPath": "/objects/uploads/2b5d41be-5958-4415-92dc-a189965758ad",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:59:35.296Z",
+    "videoId": "4794da8c-f215-4416-8c2b-d5d96e250781"
+  },
+  "Warehouse_001/videos/Camera_0021.mp4": {
+    "objectPath": "/objects/uploads/60d301aa-5b40-4fec-94aa-d618d461d82b",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:11:05.328Z",
+    "videoId": "57167678-a4cd-4e77-ac3e-aa27a6f5d971"
+  },
+  "Warehouse_001/videos/Camera_0022.mp4": {
+    "objectPath": "/objects/uploads/760869b7-f576-4a73-a6a2-091c435a3a44",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:11:12.290Z",
+    "videoId": "b8411dc7-3af1-44c6-83fa-d0df2de0ab36"
+  },
+  "Warehouse_001/videos/Camera_0023.mp4": {
+    "objectPath": "/objects/uploads/0dd5136b-3061-4247-a7a9-554696859259",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:11:19.405Z",
+    "videoId": "b06e8f15-6a55-4f9b-b040-df320301bae4"
+  },
+  "Warehouse_001/videos/Camera_0024.mp4": {
+    "objectPath": "/objects/uploads/29bdcbe4-2b86-4aac-8974-9d87c8090833",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:11:33.737Z",
+    "videoId": "319485a1-0521-4e65-909c-1cc4bee1d7a2"
+  },
+  "Warehouse_001/videos/Camera_0025.mp4": {
+    "objectPath": "/objects/uploads/ae4a7216-25d9-48be-ae49-c03cb768da7c",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:59:36.132Z",
+    "videoId": "6e061b08-1a9f-4b68-ae7e-8cf07b082497"
+  },
+  "Warehouse_001/videos/Camera_0026.mp4": {
+    "objectPath": "/objects/uploads/ceba6c9a-1056-4e71-8f59-3902902b1cf5",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:11:44.783Z",
+    "videoId": "ad2735d5-2c34-4831-a179-bbfb32f1e5c4"
+  },
+  "Warehouse_001/videos/Camera_0027.mp4": {
+    "objectPath": "/objects/uploads/104bb27b-1990-43c1-9137-bb59382d8f37",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:11:58.235Z",
+    "videoId": "f423db2b-e1d7-464b-8bd6-ab53d12455c2"
+  },
+  "Warehouse_001/videos/Camera_0028.mp4": {
+    "objectPath": "/objects/uploads/853f7e5d-db64-475d-a04f-c29af407fa12",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:12:02.158Z",
+    "videoId": "e790baa6-92f8-41d4-8b05-e2349b8f0578"
+  },
+  "Warehouse_001/videos/Camera_0029.mp4": {
+    "objectPath": "/objects/uploads/274ba0e6-2963-49fe-a994-de0a4e7e8fe8",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:59:38.007Z",
+    "videoId": "a16d436f-f2d6-49ed-8ae3-f378eb103cb5"
+  },
+  "Warehouse_001/videos/Camera_0030.mp4": {
+    "objectPath": "/objects/uploads/cebd5d71-905c-4e2b-8be3-d3b0a2696953",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:12:26.281Z",
+    "videoId": "782215be-8118-4679-a956-446c59004b4d"
+  },
+  "Warehouse_001/videos/Camera_0031.mp4": {
+    "objectPath": "/objects/uploads/05464695-8476-41bd-85ba-8ca9a04c3671",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:12:38.844Z",
+    "videoId": "aacd790f-1c02-46b2-9de1-f8a7c609ca20"
+  },
+  "Warehouse_001/videos/Camera_0032.mp4": {
+    "objectPath": "/objects/uploads/6dbce790-2be9-49e6-b874-bb570066ff32",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:59:50.804Z",
+    "videoId": "aae71643-d3a7-471b-b890-2436406c2b0e"
+  },
+  "Warehouse_001/videos/Camera_0033.mp4": {
+    "objectPath": "/objects/uploads/fa82e690-706c-4c70-aed9-3eee1b3b51f4",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:59:53.828Z",
+    "videoId": "8ec33609-ec97-4448-a430-6dc11459c428"
+  },
+  "Warehouse_001/videos/Camera_0034.mp4": {
+    "objectPath": "/objects/uploads/be864ea1-e8c6-470c-bcc6-e2946fc63194",
+    "state": "registered",
+    "registeredAt": "2026-10-27T09:59:58.075Z",
+    "videoId": "bbe60e86-82a6-4597-a178-69b18759a5b5"
+  },
+  "Warehouse_001/videos/Camera_0035.mp4": {
+    "objectPath": "/objects/uploads/885f352d-90a9-442b-a968-19e24a314212",
+    "state": "registered",
+    "registeredAt": "2026-10-27T10:00:02.615Z",
+    "videoId": "6b15001a-4529-4a3b-8cc3-1d33cca82954"
+  },
+  "Warehouse_001/videos/Camera_0036.mp4": {
+    "objectPath": "/objects/uploads/977f9d94-7f71-4b03-a0f1-80fb4966fdf9",
+    "state": "registered",
+    "registeredAt": "2026-10-27T10:00:04.393Z",
+    "videoId": "d92c7b3c-daf5-466f-90a1-5c188ecfc3db"
+  },
+  "Warehouse_001/videos/Camera_0037.mp4": {
+    "objectPath": "/objects/uploads/8558090c-c80a-44f9-b284-e436735abdab",
+    "state": "registered",
+    "registeredAt": "2026-10-27T10:00:09.451Z",
+    "videoId": "b7454e7b-c609-4605-9728-6df6b8cc8f2b"
+  },
+  "Warehouse_001/videos/Camera_0038.mp4": {
+    "objectPath": "/objects/uploads/555f69a0-1f6f-486f-a3f7-b75bb49f2818",
+    "state": "uploaded"
+  },
+  "Warehouse_001/videos/Camera_0039.mp4": {
+    "objectPath": "/objects/uploads/89b38e9b-592b-464a-ad1d-31fa8ea1e88a",
+    "state": "uploaded"
+  },
+  "Warehouse_001/videos/Camera_0040.mp4": {
+    "objectPath": "/objects/uploads/69d8f7f7-ace7-4c27-a588-595220e3bf2b",
+    "state": "registered",
+    "registeredAt": "2026-10-27T10:01:58.940Z",
+    "videoId": "932d80e2-4256-4d28-bf58-b7ed5ae53e38"
+  },
+  "Warehouse_001/videos/Camera_0041.mp4": {
+    "objectPath": "/objects/uploads/df488168-ae6d-41d8-83bd-b008abdab6a8",
+    "state": "registered",
+    "registeredAt": "2026-10-27T10:02:52.575Z",
+    "videoId": "08aafaa2-3df2-4410-b966-e7fbeb976560"
+  },
+  "Warehouse_001/videos/crowd_five.mp4": {
+    "objectPath": "/objects/uploads/1571b3d9-2897-4513-8b4a-83ae9edce47c",
+    "state": "registered",
+    "registeredAt": "2026-10-30T05:00:57.856Z",
+    "videoId": "67f2ca24-b6e2-4cab-bce7-2a9cb47e1116"
+  },
+  "Warehouse_001/videos/fast_motion.mp4": {
+    "objectPath": "/objects/uploads/821abbbd-0389-4b3b-b80e-11f551a8ce56",
+    "state": "registered",
+    "registeredAt": "2026-10-30T05:00:57.960Z",
+    "videoId": "b9135791-1626-4f43-a997-0fc09a05b5c5"
+  },
+  "Warehouse_001/videos/reentry_gap.mp4": {
+    "objectPath": "/objects/uploads/68daae5b-b42f-472d-b8ff-354ab2a38d87",
+    "state": "registered",
+    "registeredAt": "2026-10-30T05:00:58.073Z",
+    "videoId": "2e81ba73-642b-4aa3-9496-096722d214c8"
+  },
+  "Warehouse_001/videos/single_person.mp4": {
+    "objectPath": "/objects/uploads/b300b32e-49ea-4f6d-a707-0e9b33552e14",
+    "state": "registered",
+    "registeredAt": "2026-10-30T05:00:58.180Z",
+    "videoId": "4c04b6e0-9203-4f13-aa6a-8988e8c91a9b"
+  },
+  "Warehouse_001/videos/static_object.mp4": {
+    "objectPath": "/objects/uploads/f0a97c06-1a93-4aee-8dd4-feb93b6bf851",
+    "state": "registered",
+    "registeredAt": "2026-10-30T05:00:58.284Z",
+    "videoId": "047878d3-105a-402a-b738-a8caf01b690b"
+  },
+  "Warehouse_001/videos/two_persons_cross.mp4": {
+    "objectPath": "/objects/uploads/c94817bb-8b3b-4ed4-9784-55d36d57300d",
+    "state": "registered",
+    "registeredAt": "2026-10-30T05:00:58.416Z",
+    "videoId": "f151e644-3546-4281-94b5-49552c2acea3"
+  }
+}

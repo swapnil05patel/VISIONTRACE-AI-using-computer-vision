@@ -1,0 +1,885 @@
+{
+  "datasetId": "mars",
+  "root": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars",
+  "layoutOk": true,
+  "discoveredFiles": 96,
+  "validSamples": 96,
+  "identities": 12,
+  "cameras": 3,
+  "skipped": 0,
+  "splits": {
+    "train": 72,
+    "test": 24
+  },
+  "errors": [],
+  "purpose": "benchmark",
+  "accessNote": "MARS is a video-based Re-ID dataset. Confirm provider terms before import. Media stays on the configured filesystem.",
+  "importedAt": "2026-10-23T11:18:43.026377+00:00",
+  "dryRun": false,
+  "samples": [
+    {
+      "id": "a4e4f9623ce3e5a2f40aa64d3e0277bee1ccac3d9548395f502bf5d993ae2fe5",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0002/0002C1T0001F001.jpg",
+      "originalId": "0002C1T0001F001.jpg"
+    },
+    {
+      "id": "ccc917f2920563f5f25029dc996f2889fd623302277ffa9f5f6624a6bd10e1a8",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0002/0002C1T0001F003.jpg",
+      "originalId": "0002C1T0001F003.jpg"
+    },
+    {
+      "id": "76a3f1012d2ae9f52d99c47b504fb3f572124217819bbd5b88579c1c7c8becc7",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0002/0002C2T0001F001.jpg",
+      "originalId": "0002C2T0001F001.jpg"
+    },
+    {
+      "id": "dc287b2e02f7ea1056b89c7d6942841513c06593f6de27bb0449cfcbd130db7e",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0002/0002C2T0001F003.jpg",
+      "originalId": "0002C2T0001F003.jpg"
+    },
+    {
+      "id": "d35a4afba15a915ca754947016b58f8e14d02e52eb883fdf7a677821ead39873",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0002/0002C2T0001F002.jpg",
+      "originalId": "0002C2T0001F002.jpg"
+    },
+    {
+      "id": "c381db46cd50cecf2c1bd0d86809474381498661a979762b8fbcb4215bc6a5f2",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0002/0002C1T0001F002.jpg",
+      "originalId": "0002C1T0001F002.jpg"
+    },
+    {
+      "id": "5a85b63debc0949467e03c78f796cebd0b2dd55351bf5f697d953cce31bddd0e",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0001/0001C1T0001F003.jpg",
+      "originalId": "0001C1T0001F003.jpg"
+    },
+    {
+      "id": "a33aae18eaea3f9519f121b8cd2223dfab363c201db0e4b758be96be213b8560",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0001/0001C2T0001F003.jpg",
+      "originalId": "0001C2T0001F003.jpg"
+    },
+    {
+      "id": "e0800edbe98eeb4e8b60bf94232eb565ebd287494d02448a1b6e8af5b7b39281",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0001/0001C1T0001F002.jpg",
+      "originalId": "0001C1T0001F002.jpg"
+    },
+    {
+      "id": "09286ae9bc24ee01bc2506422580706f189d62d2376b767b19648aec202cbf63",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0001/0001C1T0001F001.jpg",
+      "originalId": "0001C1T0001F001.jpg"
+    },
+    {
+      "id": "684ef6515302e373b956f179caf18e986a6ab6f2487fecb974d1238ed9835475",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0001/0001C2T0001F001.jpg",
+      "originalId": "0001C2T0001F001.jpg"
+    },
+    {
+      "id": "2091c67bb4c902e02a4a689950b5ff9976f89d7a019345fd571a564d34273ee6",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0001/0001C2T0001F002.jpg",
+      "originalId": "0001C2T0001F002.jpg"
+    },
+    {
+      "id": "c73c41d2edadda645f0c40a99c038a2c5c63ba1415cd3b4c610866240d0862f7",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0012/0012C1T0001F001.jpg",
+      "originalId": "0012C1T0001F001.jpg"
+    },
+    {
+      "id": "41e9760d6be84cbb8c54fa4556cd073e132f73eea4a67aa4643a5defd4897d75",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0012/0012C2T0001F001.jpg",
+      "originalId": "0012C2T0001F001.jpg"
+    },
+    {
+      "id": "d5fcb61c52122c539957d1aad3fdd36094d9971cfedc49a93a48bac058b0756f",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0012/0012C2T0001F003.jpg",
+      "originalId": "0012C2T0001F003.jpg"
+    },
+    {
+      "id": "51f6b4e36607521cbb01f2100e8ad44aead6fc392d999db552d0dfe671fdc372",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0012/0012C2T0001F002.jpg",
+      "originalId": "0012C2T0001F002.jpg"
+    },
+    {
+      "id": "0dea29db9eca9a60269b5374b3c73aac12510f99211536e3a505867d64f21117",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0012/0012C1T0001F003.jpg",
+      "originalId": "0012C1T0001F003.jpg"
+    },
+    {
+      "id": "af81f4b3e34787e5f2856c1ab050fbe44f97e00f10b64c80ea4e997281f5c553",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0012/0012C1T0001F002.jpg",
+      "originalId": "0012C1T0001F002.jpg"
+    },
+    {
+      "id": "617b6d62997cf61474a5342bd9fef2463d2ab977329d8976d929bbe094047ff2",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0008/0008C1T0001F001.jpg",
+      "originalId": "0008C1T0001F001.jpg"
+    },
+    {
+      "id": "cd7ef976eb901c8a01765d1abf6a87d5f7c846e44f22614cb22fbb24741eac0d",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0008/0008C2T0001F001.jpg",
+      "originalId": "0008C2T0001F001.jpg"
+    },
+    {
+      "id": "ce0411871733698e7e884975fcf19e684066d7a0fa7866b8aebd37672007482e",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0008/0008C2T0001F003.jpg",
+      "originalId": "0008C2T0001F003.jpg"
+    },
+    {
+      "id": "046a6cdd6beed45c38ba6edfe0b13f820f45ed122424b4987fa37f30932128fa",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0008/0008C1T0001F003.jpg",
+      "originalId": "0008C1T0001F003.jpg"
+    },
+    {
+      "id": "a603774ed3e6a4a0da364925122cff323b959ffa2afbfd771c80dc50eb60fa67",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0008/0008C2T0001F002.jpg",
+      "originalId": "0008C2T0001F002.jpg"
+    },
+    {
+      "id": "f2360a464fffccf25c4538e2a799654a2f9ef1705f4832b0451c3f18c5d0a8c0",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0008/0008C1T0001F002.jpg",
+      "originalId": "0008C1T0001F002.jpg"
+    },
+    {
+      "id": "a68f61493d131c3d9f9006eda8de210d5a2ecd3267705d8230480ed05d8bf719",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0003/0003C1T0001F002.jpg",
+      "originalId": "0003C1T0001F002.jpg"
+    },
+    {
+      "id": "1ac06d7808f78741c2c0bfeb702ab0f2b62497dc32ac66014caae30e07a71d21",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0003/0003C2T0001F002.jpg",
+      "originalId": "0003C2T0001F002.jpg"
+    },
+    {
+      "id": "85ac1cc0b9ebef8f7d1d70483687c562058ceb4d809da4722b43fa26d4baa45d",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0003/0003C1T0001F001.jpg",
+      "originalId": "0003C1T0001F001.jpg"
+    },
+    {
+      "id": "2090bca4e1a0260b84c19935cecc748ac326e67dda8407f8f7cab7a873d35add",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0003/0003C2T0001F001.jpg",
+      "originalId": "0003C2T0001F001.jpg"
+    },
+    {
+      "id": "67fb1457c080f51d2ad35a7a77e27c2a43d5bf03ef1937afc16521790c791e1a",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0003/0003C2T0001F003.jpg",
+      "originalId": "0003C2T0001F003.jpg"
+    },
+    {
+      "id": "7a67708f15ed0286ecaa3e5926088397c6bcb5f856e087806b57a4cb945c03d6",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0003/0003C1T0001F003.jpg",
+      "originalId": "0003C1T0001F003.jpg"
+    },
+    {
+      "id": "f032fe108dbe54023083e54209e0c3f8c079c52a4ffafd864516332aeb3411b6",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0004/0004C1T0001F003.jpg",
+      "originalId": "0004C1T0001F003.jpg"
+    },
+    {
+      "id": "0f6d9fa4cf3a0d4cb4234d82443a8f4e7a2832e64e02bcd79494bd5a722aceeb",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0004/0004C2T0001F003.jpg",
+      "originalId": "0004C2T0001F003.jpg"
+    },
+    {
+      "id": "3fdd71e78e220e0f1ec154dd943a9ccf47afc150f5a1d40ebdb2fcd4ab5ed6a4",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0004/0004C2T0001F002.jpg",
+      "originalId": "0004C2T0001F002.jpg"
+    },
+    {
+      "id": "f12d0a8e7ecd3395cee278b8344627b7a0b974abc967c705c206e89efd3e628b",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0004/0004C2T0001F001.jpg",
+      "originalId": "0004C2T0001F001.jpg"
+    },
+    {
+      "id": "c61aa752dd8ea82940919d62b8c6303218699534ce1ab974c24d371350f9ac97",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0004/0004C1T0001F002.jpg",
+      "originalId": "0004C1T0001F002.jpg"
+    },
+    {
+      "id": "9228925cfcb5c1da58667fe8821ba6c20ce6c2f0aa7622ac04340aa3af770741",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0004/0004C1T0001F001.jpg",
+      "originalId": "0004C1T0001F001.jpg"
+    },
+    {
+      "id": "3611632c46a653df9298cd5aeb051ee455643d95628890527f23a81f99e715fc",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0010/0010C2T0001F003.jpg",
+      "originalId": "0010C2T0001F003.jpg"
+    },
+    {
+      "id": "7e7eb2c1d8ab9894a0cf03da6076afaf430147ab7a53df7a390082899cc55c6d",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0010/0010C2T0001F002.jpg",
+      "originalId": "0010C2T0001F002.jpg"
+    },
+    {
+      "id": "140ba433ac8398a3a5233e23538e931d79374e5364ca8f76392f96d1f5eebd66",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0010/0010C1T0001F001.jpg",
+      "originalId": "0010C1T0001F001.jpg"
+    },
+    {
+      "id": "6eb2eb95a422f47161c98f12a50c88572445b139f63c1678d0099447a01ead27",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0010/0010C2T0001F001.jpg",
+      "originalId": "0010C2T0001F001.jpg"
+    },
+    {
+      "id": "a33f96e8a4440e0cde4f2ad7716cd444e4f614a6dd75d7119c6160fdd730dbbf",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0010/0010C1T0001F003.jpg",
+      "originalId": "0010C1T0001F003.jpg"
+    },
+    {
+      "id": "ebaa19b86256743ba4f8377a7e54caf9e04ad980f0bdc6ea021cdd371db7fcb3",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0010/0010C1T0001F002.jpg",
+      "originalId": "0010C1T0001F002.jpg"
+    },
+    {
+      "id": "848966dd5bfcfd3dbb9c4265ceb73f44fcd1458e625dfcece471f2ed543081e4",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0005/0005C1T0001F002.jpg",
+      "originalId": "0005C1T0001F002.jpg"
+    },
+    {
+      "id": "6befd2daf34fefdf8fe4e3c09a7e6e4f56887d116bd1fbbc9c0990b69f7d0cfb",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0005/0005C2T0001F002.jpg",
+      "originalId": "0005C2T0001F002.jpg"
+    },
+    {
+      "id": "2e10661e5e0ac16d84ba74e7c2b40383c05a3bf76221929684c7459946811b2f",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0005/0005C2T0001F001.jpg",
+      "originalId": "0005C2T0001F001.jpg"
+    },
+    {
+      "id": "7036c268a610dcb0b5d8eabe1a98d5940d8a4195807132f954ef0e27db3b7593",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0005/0005C1T0001F003.jpg",
+      "originalId": "0005C1T0001F003.jpg"
+    },
+    {
+      "id": "0a0e48d1d18dbeb04a69cb435b7a76f3c353e0052cd48f508c2ce00dc546bffc",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0005/0005C1T0001F001.jpg",
+      "originalId": "0005C1T0001F001.jpg"
+    },
+    {
+      "id": "214c287334e3d89ddb24409aae7d20dc11d0316cb8c64c2bc7152da03f66c3ac",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0005/0005C2T0001F003.jpg",
+      "originalId": "0005C2T0001F003.jpg"
+    },
+    {
+      "id": "51049fd23051880943be673c25e6f7744ea9ee9f9ca4d86aa9936f6739ccebaf",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0006/0006C1T0001F002.jpg",
+      "originalId": "0006C1T0001F002.jpg"
+    },
+    {
+      "id": "7db36af1e2ad9abac893c8b48df596a9814ea67094c1347b78ba6333955c6e08",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0006/0006C1T0001F001.jpg",
+      "originalId": "0006C1T0001F001.jpg"
+    },
+    {
+      "id": "a182bac687f0cb23e2b5a94e44df5d734dd4b121edca1b0b321915aed37fb6c4",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0006/0006C2T0001F002.jpg",
+      "originalId": "0006C2T0001F002.jpg"
+    },
+    {
+      "id": "ed84956852574b9713dc9df13a97b2053728b9b97d0de9ce5c53b8eba2a285b9",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0006/0006C1T0001F003.jpg",
+      "originalId": "0006C1T0001F003.jpg"
+    },
+    {
+      "id": "88b147401476bba20f4390477b634a295d7abaf9a4dcf88df5eb1ea8771a471d",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0006/0006C2T0001F001.jpg",
+      "originalId": "0006C2T0001F001.jpg"
+    },
+    {
+      "id": "7f13e600f009b1611066a2b7fab8f78031055a218e26fb237be516f310599260",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0006/0006C2T0001F003.jpg",
+      "originalId": "0006C2T0001F003.jpg"
+    },
+    {
+      "id": "039f6ff8f1cc6d3a5f3634c39b2b23bae7201381453ced2ab8b9321dd155fc00",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0007/0007C2T0001F003.jpg",
+      "originalId": "0007C2T0001F003.jpg"
+    },
+    {
+      "id": "27667ef1020e340ab763c847aaf8e8df93d3eaec9e37b23dd119d7c2075d90a7",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0007/0007C2T0001F001.jpg",
+      "originalId": "0007C2T0001F001.jpg"
+    },
+    {
+      "id": "0702d7ea0def0d0af56d239a6ea652dfdffb0f10873a0bf20e4f1c235be8491c",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0007/0007C1T0001F003.jpg",
+      "originalId": "0007C1T0001F003.jpg"
+    },
+    {
+      "id": "8046ef15937761400c4f055b0eaae1054b7447fdfd1512466139b7300fc70d59",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0007/0007C1T0001F001.jpg",
+      "originalId": "0007C1T0001F001.jpg"
+    },
+    {
+      "id": "77137a39d8b852a0d2bfee95bccc7de3d063d1873782af78732e40953ca454ba",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0007/0007C2T0001F002.jpg",
+      "originalId": "0007C2T0001F002.jpg"
+    },
+    {
+      "id": "50b6da9f5a7d46094705548c71f106f110a260ff1893b780592e456505e8ed6c",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0007/0007C1T0001F002.jpg",
+      "originalId": "0007C1T0001F002.jpg"
+    },
+    {
+      "id": "266f0e3961cea4b9427a38ba9f25a955a007013be3eedb05b511d7760e8734dc",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0011/0011C2T0001F003.jpg",
+      "originalId": "0011C2T0001F003.jpg"
+    },
+    {
+      "id": "b401db8d18cf39f74967236eae5b66d4ce7425f078b5f7128bb28e16de569b27",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0011/0011C1T0001F002.jpg",
+      "originalId": "0011C1T0001F002.jpg"
+    },
+    {
+      "id": "9875570284b722217b3162746f08afff0a607d40cb4e42555156549c6fdc66d9",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0011/0011C2T0001F002.jpg",
+      "originalId": "0011C2T0001F002.jpg"
+    },
+    {
+      "id": "945a32d0e01ed9678a3a247a2a18c3c23455b4303b253bd1d41ddbdba7d321cd",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0011/0011C2T0001F001.jpg",
+      "originalId": "0011C2T0001F001.jpg"
+    },
+    {
+      "id": "38936605238f3b0a45c9b8ad0fc9a9d1580d48ec1934dbb20b1e46865fe50ddb",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0011/0011C1T0001F001.jpg",
+      "originalId": "0011C1T0001F001.jpg"
+    },
+    {
+      "id": "c933098a6a98110ca100f8847e0d118d62280dd85a1aa5700deb178f8cd7b768",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0011/0011C1T0001F003.jpg",
+      "originalId": "0011C1T0001F003.jpg"
+    },
+    {
+      "id": "c9fbf92ce947f325ee205a9da13058ee2fdc4a20150ea1ca1310dba6454aa312",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0009/0009C1T0001F002.jpg",
+      "originalId": "0009C1T0001F002.jpg"
+    },
+    {
+      "id": "b4ac14af3e7705f3e60a803da20bc49f0e5ab1412d9f4ab1b53a16af9377f40e",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0009/0009C2T0001F002.jpg",
+      "originalId": "0009C2T0001F002.jpg"
+    },
+    {
+      "id": "16029bf46b2b3376ca0d3b59654c3b59cc58143568879223da06599a65cf0ec9",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0009/0009C2T0001F003.jpg",
+      "originalId": "0009C2T0001F003.jpg"
+    },
+    {
+      "id": "61da44204cdfd41226ab9bedd3469c79180fc94b537f7d49f996403d79782275",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0009/0009C1T0001F001.jpg",
+      "originalId": "0009C1T0001F001.jpg"
+    },
+    {
+      "id": "ccbdce075ee9d07826aad46d40d1d79e461ac951eaf0aea0d56c6f6e961b5485",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0009/0009C1T0001F003.jpg",
+      "originalId": "0009C1T0001F003.jpg"
+    },
+    {
+      "id": "96a0dbd24b603e9add45680ae4c4dba6a2b2fa20358d1216b06f153a5ed99789",
+      "datasetId": "mars",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_train/0009/0009C2T0001F001.jpg",
+      "originalId": "0009C2T0001F001.jpg"
+    },
+    {
+      "id": "340c03cf97ea56fda9b4c19e196d21464c73b51ce0abbb243ca5bd0f523ea696",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0002",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0002/0002C3T0002F002.jpg",
+      "originalId": "0002C3T0002F002.jpg"
+    },
+    {
+      "id": "e6b286daa55b34a3cdbe9a4b8af5dc5a30f841a18d9e5fc5a0a163900c19572d",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0002",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0002/0002C3T0002F001.jpg",
+      "originalId": "0002C3T0002F001.jpg"
+    },
+    {
+      "id": "4e32de5e28c8ccd87c2f9bb3ab15ff8f26a322739d58a0108af3460d5876a638",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0001",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0001/0001C3T0002F002.jpg",
+      "originalId": "0001C3T0002F002.jpg"
+    },
+    {
+      "id": "0c36063440fa6b6d7e1bac9687518ce25d2ccaea4ea8f185f7010fcc99c4f30b",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0001",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0001/0001C3T0002F001.jpg",
+      "originalId": "0001C3T0002F001.jpg"
+    },
+    {
+      "id": "e2295a3503e4e41c4bd291318bb27a254b164edec82658e9d332d7c73936b01e",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0012",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0012/0012C3T0002F002.jpg",
+      "originalId": "0012C3T0002F002.jpg"
+    },
+    {
+      "id": "0cea0529f295e85130b37da119922d7bde93697613e5a1908f345eb4f65edebb",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0012",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0012/0012C3T0002F001.jpg",
+      "originalId": "0012C3T0002F001.jpg"
+    },
+    {
+      "id": "c0c8907cae593e9639fcd5e2d5613c4146c92c2bc4e4ebfe0ce45118f3d69ea3",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0008",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0008/0008C3T0002F001.jpg",
+      "originalId": "0008C3T0002F001.jpg"
+    },
+    {
+      "id": "a78e11a6d5693b4387eb0715f612a83937aa4694d9dc35efa7a59a1c5075b437",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0008",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0008/0008C3T0002F002.jpg",
+      "originalId": "0008C3T0002F002.jpg"
+    },
+    {
+      "id": "0cf2dd53cc53c22a51ee4b61414e098b6196d1e83239f6090fd7d39da0ffe75e",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0003",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0003/0003C3T0002F002.jpg",
+      "originalId": "0003C3T0002F002.jpg"
+    },
+    {
+      "id": "232a482250d7f756a108a39f3bbcf4b3bc4c29e747dabfd935c123132ed50fd6",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0003",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0003/0003C3T0002F001.jpg",
+      "originalId": "0003C3T0002F001.jpg"
+    },
+    {
+      "id": "9e837797e7dc708e60f79cb4bfbb5e56b48991903766f484797700942ad75a51",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0004",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0004/0004C3T0002F002.jpg",
+      "originalId": "0004C3T0002F002.jpg"
+    },
+    {
+      "id": "d0c847e67930b86166367007090203d6783a92070eeb13db5af2bee78c30fa7e",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0004",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0004/0004C3T0002F001.jpg",
+      "originalId": "0004C3T0002F001.jpg"
+    },
+    {
+      "id": "4c4c9d740ed7aacf977954f7762ffbba36cc579588e815457005ada9c26fca0a",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0010",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0010/0010C3T0002F001.jpg",
+      "originalId": "0010C3T0002F001.jpg"
+    },
+    {
+      "id": "55a6501e1395f22b27eba9fe10298527bcc260c691ffe2eac79332a54b77cf4a",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0010",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0010/0010C3T0002F002.jpg",
+      "originalId": "0010C3T0002F002.jpg"
+    },
+    {
+      "id": "8d0bf2189fd4ed0ffd98544105acd4def8417b4da7516699c640a525f6c86471",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0005",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0005/0005C3T0002F002.jpg",
+      "originalId": "0005C3T0002F002.jpg"
+    },
+    {
+      "id": "572f065e17bc34cb840a485f1ddbbf2d22530304a16bf692182946bce0325b92",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0005",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0005/0005C3T0002F001.jpg",
+      "originalId": "0005C3T0002F001.jpg"
+    },
+    {
+      "id": "4c038592708026fa1b3aa4f89c3b29e43bbf5a9a3b594e1282fc6c7c9ed47566",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0006",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0006/0006C3T0002F002.jpg",
+      "originalId": "0006C3T0002F002.jpg"
+    },
+    {
+      "id": "1dd509cfbbfc42ac4a9af8cd9f217df71ab512a6db964c0a27d1b31c762639f8",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0006",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0006/0006C3T0002F001.jpg",
+      "originalId": "0006C3T0002F001.jpg"
+    },
+    {
+      "id": "bfcc6d5156b8b97af01f153847d11287e7f145ba6db9866ccc021c7809a69f00",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0007",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0007/0007C3T0002F002.jpg",
+      "originalId": "0007C3T0002F002.jpg"
+    },
+    {
+      "id": "3a9fd50d61f1a8295125ec3de750eb235e475ae6ec8b7eb8aee3b92e296eefa7",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0007",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0007/0007C3T0002F001.jpg",
+      "originalId": "0007C3T0002F001.jpg"
+    },
+    {
+      "id": "4bc3da771656172c675a3920a5937af15875866a5178982182443cd4e1e3309a",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0011",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0011/0011C3T0002F001.jpg",
+      "originalId": "0011C3T0002F001.jpg"
+    },
+    {
+      "id": "ddcbe3a5b5f6c325b5876b72e5b6e06ebac1c895348db5cd8764787b57385560",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0011",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0011/0011C3T0002F002.jpg",
+      "originalId": "0011C3T0002F002.jpg"
+    },
+    {
+      "id": "94e525d6327c985593fbfab7b39fe532dda509ac8b7d944c8f30c3e3687e9eff",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0009",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0009/0009C3T0002F002.jpg",
+      "originalId": "0009C3T0002F002.jpg"
+    },
+    {
+      "id": "09c55f06c23f991ae13dd15d59a75cfb52d3ddfb6e5d844e14b67124353f463c",
+      "datasetId": "mars",
+      "split": "test",
+      "identityId": "0009",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/mars/bbox_test/0009/0009C3T0002F001.jpg",
+      "originalId": "0009C3T0002F001.jpg"
+    }
+  ]
+}

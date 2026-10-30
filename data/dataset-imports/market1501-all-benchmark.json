@@ -1,0 +1,994 @@
+{
+  "datasetId": "market1501",
+  "root": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501",
+  "layoutOk": true,
+  "discoveredFiles": 108,
+  "validSamples": 108,
+  "identities": 12,
+  "cameras": 6,
+  "skipped": 0,
+  "splits": {
+    "train": 72,
+    "gallery": 24,
+    "query": 12
+  },
+  "errors": [],
+  "purpose": "benchmark",
+  "accessNote": "Market-1501 is a research Re-ID dataset. Confirm Tsinghua/provider terms before import. Media stays on the configured filesystem.",
+  "importedAt": "2026-10-23T11:18:36.100122+00:00",
+  "dryRun": false,
+  "samples": [
+    {
+      "id": "82058df8a4b601722c88ebae495faa3180404b7033782c275aaf0ec9bd515970",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0003_c2s2_000220_00.jpg",
+      "originalId": "0003_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "c60440a42c88b5c2dde2122a4e4ade16af5d2b46e97ce69a015733ee5638d370",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0007_c1s2_000210_00.jpg",
+      "originalId": "0007_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "8b363c5f17f621a2af5337bca478e62633d9e1b6d0c38f3a74ab59749500d853",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0005_c3s1_000130_00.jpg",
+      "originalId": "0005_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "af7f9f1263ca4c93200ba8ce390b7acefb870fd1620b6038e5015abf1c0844d0",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0002_c3s2_000230_00.jpg",
+      "originalId": "0002_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "800edef36526990ef9f00f29ec9de8eb5d3ae71d3ee9a9196596ad6809b393f4",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0006_c3s1_000130_00.jpg",
+      "originalId": "0006_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "1aa0cb5b3f29b13bbc51db7db2a082dad6776f844b31f7bff0ebcf034e02ab28",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0011_c1s1_000110_00.jpg",
+      "originalId": "0011_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "c08ba873152a4627b90734d929e86c0171d164afe9b948f25fdb15268ce3a44b",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0004_c3s2_000230_00.jpg",
+      "originalId": "0004_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "75e8eacfde3874750500f95f8e5e408531c210e70526a0a89b0cc19b46112fb5",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0002_c2s1_000120_00.jpg",
+      "originalId": "0002_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "67ac59dc8a2d7d263bae54bae4b6a96e2736858d35ae0803e42a7f53509aba87",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0012_c2s2_000220_00.jpg",
+      "originalId": "0012_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "dece691c237aa1798b63dce7e838b529496f6657d5d46b6c3ae2c32b1f8ff1b7",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0001_c1s2_000210_00.jpg",
+      "originalId": "0001_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "a79a991db279ed52e5bb291aa142a1e30b8cea90f8624d0f62bea7c947476a9b",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0006_c3s2_000230_00.jpg",
+      "originalId": "0006_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "3f27d99ae7b712681a4b0dc5e363123c8b2a033fe746582e9382cc1294106128",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0007_c2s1_000120_00.jpg",
+      "originalId": "0007_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "75a51f9c0489cffc68ab38eeccd1b5c67a6bdc2671ef50040c96e1cd3e6a151e",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0002_c1s2_000210_00.jpg",
+      "originalId": "0002_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "f040a6dc8f193e69f688899bd9e4dd6183e98af6e8e6db32cc921ea52e308e3c",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0001_c3s2_000230_00.jpg",
+      "originalId": "0001_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "55131a55032bd583fa010a9377f1d48a79f60f7fd9ac9be336b41f91cc458c57",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0009_c1s2_000210_00.jpg",
+      "originalId": "0009_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "aa9057e44c3012542e03ac4d428f16c57e94d29f1538cfebf38765442b42b8c2",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0012_c3s2_000230_00.jpg",
+      "originalId": "0012_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "6897a177167e379f6682d8c004723de9687294d826ce6e0c709078c1577dc1bd",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0001_c1s1_000110_00.jpg",
+      "originalId": "0001_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "958747175e57cb3a48af808e9f8f2ad3d60d0b33cf87d027a6faadbf2cabbc10",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0008_c1s2_000210_00.jpg",
+      "originalId": "0008_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "e5038a467ff4164efc24d15324195db9853b548a5d1f95fa9e62ed42440ac86e",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0011_c3s2_000230_00.jpg",
+      "originalId": "0011_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "bb922c37ce704c7948139dc4000ffd8623a820d59b8f9f08510110164c6d4c40",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0008_c2s1_000120_00.jpg",
+      "originalId": "0008_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "c85840028d54e0b86cfec6129c7017d074b4b34ea4b31c988e8720f18d141996",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0008_c3s1_000130_00.jpg",
+      "originalId": "0008_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "fa4c5f5faddbe4b53c980394f9c77de65c977c9ef69396202b1f843a8ac04dd8",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0008_c1s1_000110_00.jpg",
+      "originalId": "0008_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "8f154531c9c22b479924bec4ecf4d773a1f83a7eb53b2d8fd3bff9070445ef4d",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0007_c3s1_000130_00.jpg",
+      "originalId": "0007_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "f0a2e4e09104384baf8bc4874ed1181d163e1cce04efa937328bb71505ab40fc",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0003_c1s1_000110_00.jpg",
+      "originalId": "0003_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "ba5ee8923b0a64e805192c2df1f9e297998bc946cb9f8cdcee67c0e34a5103d5",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0010_c3s1_000130_00.jpg",
+      "originalId": "0010_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "8446a09c10a8d278bb077aa06aa7a36bfca791fc1a2a57830e60dc4ccb1d8fe8",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0005_c3s2_000230_00.jpg",
+      "originalId": "0005_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "da7056119aaa316ab9530ded7bebe652699180bbea0acae7ed2972b4c9ad5523",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0012_c2s1_000120_00.jpg",
+      "originalId": "0012_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "9ade4756f8c53457375022d57965ac1719d60f62e280e99aa1b75bca02b89f1a",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0001_c2s1_000120_00.jpg",
+      "originalId": "0001_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "3ec3d0383c9cca17a3ac3e43bce4baf3bf21e5e1344f78c381a37fb9e8126cd0",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0011_c2s2_000220_00.jpg",
+      "originalId": "0011_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "12966bfc75e54842aedb6702587aceb981e81efbe97f223ad65547d55bbef5fd",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0001_c3s1_000130_00.jpg",
+      "originalId": "0001_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "4b18bf55262fbde6a850910baa1d6cac1bdff5685f37eac528e937bff9cc8fd1",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0004_c3s1_000130_00.jpg",
+      "originalId": "0004_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "29e3784ee7839517090b593f848ccceacc8d5c453a3632aa530ff2ee22ccf8d1",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0006_c1s2_000210_00.jpg",
+      "originalId": "0006_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "60bb3486d1847a6fd3aab28e0094188182163ce8c83df159b10bc20d3b0f43b2",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0006_c2s1_000120_00.jpg",
+      "originalId": "0006_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "7af463b751d827e426e16bda307c88ac83da35921694ff70bd97749392f8a36f",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0010_c1s2_000210_00.jpg",
+      "originalId": "0010_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "4136bc39c4cc607e32a94d62894edc236f076d08bb6753537e096a7654d99ec1",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0010_c3s2_000230_00.jpg",
+      "originalId": "0010_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "609664fffaed050735658f64a7dc3bfad281ee10da6fb7986712da80b0af3afb",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0003_c3s1_000130_00.jpg",
+      "originalId": "0003_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "e55b8aa0c964a99d642a215f1830dfe7dc008703b6e18d5afbe72fe1b4d10842",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0009_c2s1_000120_00.jpg",
+      "originalId": "0009_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "52d0a90e15c2659023315ca880b31d50811066e9cb7e463e39d9e1baaf43bf8b",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0003_c2s1_000120_00.jpg",
+      "originalId": "0003_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "2ba9a7ee54fbd0ade495bb86193a9ecc29ab00324ceea80c47cb06177f36a1a6",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0003_c1s2_000210_00.jpg",
+      "originalId": "0003_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "6e429ec39678b60d0694076ef07e498d524bef375b42948c8eabcc7e38db4e8f",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0007_c3s2_000230_00.jpg",
+      "originalId": "0007_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "aa4b4f0032af420019cad98b32525db306bf582ecad4c8f9e85465d2c3e539c3",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0005_c1s2_000210_00.jpg",
+      "originalId": "0005_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "82f1aa7ecffce7e77b0a01a60f04bb84361c1434430cdc2f6b351bb480e99f6b",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0011_c1s2_000210_00.jpg",
+      "originalId": "0011_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "3c6a36c4bf83042e8d9b757c4957a8df170dda8b20d983c35ec8b3d94c1780e7",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0004_c1s2_000210_00.jpg",
+      "originalId": "0004_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "1142feae1a33f6855572d39d1dc9fb82250fb87ce7285012a2c772baad1e4d39",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0011_c3s1_000130_00.jpg",
+      "originalId": "0011_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "884eeec3d6261d7f5838e63bcd65ab0e0d3673e14b7e297c2cc7822362177e8a",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0005_c1s1_000110_00.jpg",
+      "originalId": "0005_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "b7c6f334113d8eeef426ebd6ae15ca48de720da575464a8b406f32b88009bba3",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0007_c2s2_000220_00.jpg",
+      "originalId": "0007_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "a2f2a4ebb948bc605fcee12c32450dd95ff60eddfd33b7360669f52126c41d1c",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0002_c1s1_000110_00.jpg",
+      "originalId": "0002_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "c53fabb86876a46f11342735327d01f0156fd50df3237ec7570a24a2e2ffc3a9",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0006_c1s1_000110_00.jpg",
+      "originalId": "0006_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "86146079f2d6a153602819c63c6d7e7dfe1e69034897b8caf2b4bd2d18374645",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0010_c2s2_000220_00.jpg",
+      "originalId": "0010_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "c32ac2bbeb0c25f077841176df989db24f37bee5b5c313f92528d511074b74a0",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0012_c3s1_000130_00.jpg",
+      "originalId": "0012_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "c3a0089fcead68cb263183096f6cf0d778d2fc27df91948992290a827ab56e5a",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0002_c3s1_000130_00.jpg",
+      "originalId": "0002_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "130abe06216c29af9b536f90701635b4b26e61319ce2855819fd92b3dfcdbf6f",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0012_c1s2_000210_00.jpg",
+      "originalId": "0012_c1s2_000210_00.jpg"
+    },
+    {
+      "id": "00c920db07783f81963737460c7ea5e30d73f95a314bab1e30d69da03e676a49",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0009_c3s1_000130_00.jpg",
+      "originalId": "0009_c3s1_000130_00.jpg"
+    },
+    {
+      "id": "1130dded0059bdc4974ff1477f8aa40038b60c0d0fb277f1c0b09c5eee19c006",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0010_c2s1_000120_00.jpg",
+      "originalId": "0010_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "4679d0c57dca6cd06fe56ce5cb38bd9526e10bdce8efec9b56972659543eee29",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0004_c1s1_000110_00.jpg",
+      "originalId": "0004_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "ec4eda1e7062afd0d7bd6abe032073c680618ff94733e7c7811b214551fd26ee",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0008_c2s2_000220_00.jpg",
+      "originalId": "0008_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "2905949af9a355b9fe56d960148e3af38070ea57e505a3e24a1b8cc16d256b02",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0009_c3s2_000230_00.jpg",
+      "originalId": "0009_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "8f8c3a6b20979ac3567ef308a2033cd65b3146a8e5823f32aa313e76521a849f",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0004_c2s2_000220_00.jpg",
+      "originalId": "0004_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "fb7663eda6141258c50d5881bab2d699afe3c148c4f23ea68ed84ea2e9f2183b",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0012",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0012_c1s1_000110_00.jpg",
+      "originalId": "0012_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "f58973024778806af9f47e345cd3ea7dadcbef87ed66427b8d57aa9f88f8e24e",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0010",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0010_c1s1_000110_00.jpg",
+      "originalId": "0010_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "cef85a4e9faafb4f8dbef8dd667b651b6e90c98376ad5d82d4b5a783cbe277c0",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0009_c2s2_000220_00.jpg",
+      "originalId": "0009_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "45f9dc7fb9b12d15faa88435f362030ad8a70468cc2c3be62d3a8af10a70caf6",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0005_c2s2_000220_00.jpg",
+      "originalId": "0005_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "19f6196f3e22086cb98866a16cfcbeb172055433440f12fc8bcdaa388b7701a5",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0006",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0006_c2s2_000220_00.jpg",
+      "originalId": "0006_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "d3a84ec7d80c41e39ae5b17f9d29b452f1e3db14005c66ed57ae4dc259bd3590",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0001",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0001_c2s2_000220_00.jpg",
+      "originalId": "0001_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "5d1c4b44928654fbafc127fdab9bccedcbc4430ca92e47a8db3e5cc266b4cc98",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0003",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0003_c3s2_000230_00.jpg",
+      "originalId": "0003_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "fd047429f564e4f7e7885ad296e3522f99aaa25d056fb9c322aa739e5c35b8e6",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0009",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0009_c1s1_000110_00.jpg",
+      "originalId": "0009_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "c43dc83f38c750109db8e676d4b735854ea241764e653b25979ac4b1a12ea612",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0004",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0004_c2s1_000120_00.jpg",
+      "originalId": "0004_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "be9f9b182b33473d112b192435cc860bd8ef2ed1473116729b8d242744df0e99",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0011",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0011_c2s1_000120_00.jpg",
+      "originalId": "0011_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "781522d6549a1e615e955d14843308ad3c3fefd89e3600e3b5ce034a5812c09c",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0008",
+      "cameraId": "3",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0008_c3s2_000230_00.jpg",
+      "originalId": "0008_c3s2_000230_00.jpg"
+    },
+    {
+      "id": "79847cf423d4cccfb13b4a58b154d63a194c171a0fd30258eea0688bb9ab4090",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0002",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0002_c2s2_000220_00.jpg",
+      "originalId": "0002_c2s2_000220_00.jpg"
+    },
+    {
+      "id": "204cbfa44e12efb8aeeaf019b8feab7fbf41cf36cceefcac7056eeaa85e0c4ee",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0007",
+      "cameraId": "1",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0007_c1s1_000110_00.jpg",
+      "originalId": "0007_c1s1_000110_00.jpg"
+    },
+    {
+      "id": "e301e2e00aa85542b0b292889bbba4a75ee15695cd8317c93d8aa97388467a92",
+      "datasetId": "market1501",
+      "split": "train",
+      "identityId": "0005",
+      "cameraId": "2",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_train/0005_c2s1_000120_00.jpg",
+      "originalId": "0005_c2s1_000120_00.jpg"
+    },
+    {
+      "id": "98f18a1bd642b02fedaf4d5d55963f90ca866d710435888855f95394f1654b3d",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0003",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0003_c4s1_000304_00.jpg",
+      "originalId": "0003_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "26baccf2d01e0050b1637c60c41acb2337b2bd63c7901a674836de29213ff521",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0001",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0001_c5s1_000305_00.jpg",
+      "originalId": "0001_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "e4a24d3046952f5d2eb21b3b2a65ae1667d56f300895e4c14ca495ccb28059d8",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0011",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0011_c4s1_000304_00.jpg",
+      "originalId": "0011_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "e9d7775a4630aa3af06d609f070628f6fa56baa6d1a16eadd3ae3c9d7f28c617",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0008",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0008_c5s1_000305_00.jpg",
+      "originalId": "0008_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "946e5177a898ce776ee81c2885d0465f91081068080b3696dd027cff86d38fe9",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0004",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0004_c5s1_000305_00.jpg",
+      "originalId": "0004_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "a66052bbe0f08580a6a853aca5f2aad189ccfdc5ae2eacac7831cb04c7577cb0",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0012",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0012_c4s1_000304_00.jpg",
+      "originalId": "0012_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "185e13bd1e4f8bcb8328a527517d37fc5b9f9aa6b6ff8333fe5c98a0ab166a5e",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0010",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0010_c4s1_000304_00.jpg",
+      "originalId": "0010_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "cf29866ac347882b1fcccca6085925a75a8610d40ee5b9a1b140a438139e0b41",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0006",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0006_c5s1_000305_00.jpg",
+      "originalId": "0006_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "e3b17f2308725c4e2b06c9a30d4a1db20e4ef3484f2c9ace0ad1c21280addf91",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0001",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0001_c4s1_000304_00.jpg",
+      "originalId": "0001_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "8e4a85ca9ff551ca3c7e7cfefeacfdd292ce130a3aeed9bb097b9d02844a6524",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0005",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0005_c5s1_000305_00.jpg",
+      "originalId": "0005_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "5bb639e7f09db26996f9564c559ead0ddc158b18b3f50b3b3f29fa8803d2dbc9",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0011",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0011_c5s1_000305_00.jpg",
+      "originalId": "0011_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "82419f57439075c700414d180411185582eb1230c87db8d089f4aa6087574561",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0007",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0007_c5s1_000305_00.jpg",
+      "originalId": "0007_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "d531dc3a9c7bb69f71bf6933c1c467ac760be89e1af397057b1ed65a43ca365a",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0007",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0007_c4s1_000304_00.jpg",
+      "originalId": "0007_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "b5e87cc023698b67cb28c6a57bb544b152070d012bcdb4982340639fac83f683",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0002",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0002_c5s1_000305_00.jpg",
+      "originalId": "0002_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "f79e8e612047794b06e371eef908b425d1d05e04f916468ff65db4c7d7466766",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0010",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0010_c5s1_000305_00.jpg",
+      "originalId": "0010_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "8165d5b8fc4ad9a7de67c76ec9e127b526c279744848e41c1aa34c4bf0e6607b",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0009",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0009_c4s1_000304_00.jpg",
+      "originalId": "0009_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "b767f75ff9c8ffdd8faa7469bd31b6e138ec49371195a30a504ad1243eb258c7",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0009",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0009_c5s1_000305_00.jpg",
+      "originalId": "0009_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "5b96d19f73bd32d7a06efcfb01ca07d68c8588dfff174e86a391e158fc4d6102",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0002",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0002_c4s1_000304_00.jpg",
+      "originalId": "0002_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "6588bcbaa303e546ed3816e033fc39a86ffa1b6ff6fc35e8ea51716c2c5f2448",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0006",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0006_c4s1_000304_00.jpg",
+      "originalId": "0006_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "c2b35b5f2775d0d6c816cf7fba108a8fe2cef0e0fcaef1f5a967d50928aaf65b",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0003",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0003_c5s1_000305_00.jpg",
+      "originalId": "0003_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "4a5b10a52b7b2430999e98d19788919ffa217bfe3dfaacfcc1ef348c4b43e3a2",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0004",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0004_c4s1_000304_00.jpg",
+      "originalId": "0004_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "4f535d3612977a9a0fb48f7a56d82594d857d9ed7b51bb75b91ea3e039a60060",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0005",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0005_c4s1_000304_00.jpg",
+      "originalId": "0005_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "b59f890974059b046fd0e967a35ca7c18c7b81c01847e5d2284a73e03967d855",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0008",
+      "cameraId": "4",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0008_c4s1_000304_00.jpg",
+      "originalId": "0008_c4s1_000304_00.jpg"
+    },
+    {
+      "id": "00b82d92e29b929a759128625b86856bd72ac5f8bf896f7beb7a6028bc161693",
+      "datasetId": "market1501",
+      "split": "gallery",
+      "identityId": "0012",
+      "cameraId": "5",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/bounding_box_test/0012_c5s1_000305_00.jpg",
+      "originalId": "0012_c5s1_000305_00.jpg"
+    },
+    {
+      "id": "238c88b33f0d0a1ac1922a126e37efecd18fceffbfa2ae5857ad7fa6fef4952a",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0008",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0008_c6s1_000999_00.jpg",
+      "originalId": "0008_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "6377a784e543e4bf38571d0c35430b7203779740fb106c154a9f54e01f6820b0",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0009",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0009_c6s1_000999_00.jpg",
+      "originalId": "0009_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "a432cd5a2e048d3494809d006db48a21c2cffad90d85756090d819dfee5cdf87",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0006",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0006_c6s1_000999_00.jpg",
+      "originalId": "0006_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "6fb88031855b47692a6698d8714d78f22aea5d22bf32da74acb397b86a121862",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0004",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0004_c6s1_000999_00.jpg",
+      "originalId": "0004_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "f3b1701c0a9d7b813e477a6705e1319fa18a134267c111cf6c923cef5015b4ac",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0005",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0005_c6s1_000999_00.jpg",
+      "originalId": "0005_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "d39d6b82ac83cc63d1b2fcd6a9327d438753b9d7c28ba88e28282870a3082656",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0003",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0003_c6s1_000999_00.jpg",
+      "originalId": "0003_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "2742a27afc7572d13f05605773cd117c36e3676c642c1762114c4b69144bd672",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0011",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0011_c6s1_000999_00.jpg",
+      "originalId": "0011_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "0680da052661d25d6f8106b2ea74ee59861d6d723830c268fb99106e7099bb81",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0002",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0002_c6s1_000999_00.jpg",
+      "originalId": "0002_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "471a0057aa92c5beab67d05553d2d4f1426a5d18c9a1884d68090d23ee15ef70",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0012",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0012_c6s1_000999_00.jpg",
+      "originalId": "0012_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "a4d12deb90cf276891d2fcbf18705479b1eec3616de7783a98f092801993bf17",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0007",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0007_c6s1_000999_00.jpg",
+      "originalId": "0007_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "9f4e1894d9be7eeb4b4668bb638db40d0baca8eb989ae16ef74c5b1355dbe711",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0001",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0001_c6s1_000999_00.jpg",
+      "originalId": "0001_c6s1_000999_00.jpg"
+    },
+    {
+      "id": "6759a731fec8bd378c2ae92a94b6de6bfef6e31dc74367422d6df77c0544e40a",
+      "datasetId": "market1501",
+      "split": "query",
+      "identityId": "0010",
+      "cameraId": "6",
+      "path": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501/query/0010_c6s1_000999_00.jpg",
+      "originalId": "0010_c6s1_000999_00.jpg"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-10-30T07:54:50.136764+00:00",
+  "detector": "yolo11n",
+  "reidArchitecture": "osnet_x1_0",
+  "detectorWeightsSha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "reidWeightsSha256": "48df972f72887b95cf3b43b3a07c3a7d2398381aea0f9cae64a7ef11d512b727",
+  "embeddingDimension": 512,
+  "embeddingSpace": "osnet_x1_0_imagenet_l2",
+  "preprocessId": "osnet_256x128_imagenet_rgb",
+  "preprocess": {
+    "id": "osnet_256x128_imagenet_rgb",
+    "inputHeight": 256,
+    "inputWidth": 128,
+    "colorSpace": "rgb",
+    "normalization": "imagenet",
+    "embeddingMetric": "cosine_via_inner_product"
+  },
+  "sampleDetectionCount": 2,
+  "sampleImage": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/artifacts/api-server/ml/tests/fixtures/sample-person.jpg"
+}

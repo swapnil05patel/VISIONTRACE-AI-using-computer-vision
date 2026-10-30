@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "dataset": "market1501",
+  "root": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/dataset-fixtures/market1501",
+  "startedAt": "2026-10-23T11:26:25.012207+00:00",
+  "completedAt": "2026-10-23T11:26:39.489430+00:00",
+  "epochs": 2,
+  "batchSize": 8,
+  "seed": 42,
+  "device": "cpu",
+  "startingCheckpointSha256": "fe2d63f9157c28a4a8d8ca29bec12d5b2988ac0346d712025789ea9174968e79",
+  "selectedCheckpoint": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/data/training/osnet-market1501-finetune.pth",
+  "selectedCheckpointSha256": "282192519e91207bfbc2fbae38daf2fb54cb6ec66f6b4026253bebb4fa9b2b35",
+  "trainIdentities": 12,
+  "trainSamples": 72,
+  "heldOutSamples": 32,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 2.0396731164720325
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 1.4968492719862196
+    }
+  ],
+  "warnings": [],
+  "activation": "not_activated",
+  "note": "Training finished without changing the active production model."
+}

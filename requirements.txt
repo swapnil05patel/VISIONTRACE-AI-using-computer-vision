@@ -1,0 +1,17 @@
+# VisionTrace ML runtime (Python 3.12)
+# Install: python3.12 -m pip install -r requirements.txt
+# Datasets (MARS, MSMT17, Market-1501) are not pip packages and are never
+# downloaded by this file. Place authorized local copies and set
+# VISIONTRACE_MARS_ROOT, VISIONTRACE_MSMT17_ROOT, VISIONTRACE_MARKET1501_ROOT.
+
+faiss-cpu>=1.7.4
+fastapi>=0.110.0
+numpy>=1.26.0
+opencv-python-headless>=4.9.0
+pillow>=10.0.0
+pytest>=8.0.0
+python-multipart>=0.0.9
+torch>=2.2.0
+torchvision>=0.17.0
+ultralytics>=8.3.0
+uvicorn[standard]>=0.30.0
