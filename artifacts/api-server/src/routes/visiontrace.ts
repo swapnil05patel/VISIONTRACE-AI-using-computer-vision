@@ -1,3 +1,5 @@
+import { existsSync, readFileSync } from "node:fs";
+import path from "node:path";
 import { and, count, desc, eq, inArray, isNotNull } from "drizzle-orm";
 import {
   DetectPeopleInImageBody,
@@ -58,6 +60,39 @@ function serializeJob(job: typeof processingJobsTable.$inferSelect) {
     error: job.error ?? null,
     result: job.result ?? null,
   };
+}
+
+function readActiveModelManifest(): Array<Record<string, unknown>> {
+  const candidates = [
+    path.resolve(process.cwd(), "data", "active-models.json"),
+    path.resolve(process.cwd(), "artifacts", "api-server", "data", "active-models.json"),
+    path.resolve(__dirname, "..", "..", "data", "active-models.json"),
+    path.resolve(__dirname, "..", "..", "..", "data", "active-models.json"),
+  ];
+  const manifestPath = candidates.find((candidate) => existsSync(candidate));
+  if (!manifestPath) return [];
+  try {
+    const raw = readFileSync(manifestPath, "utf8");
+    const parsed = JSON.parse(raw) as Record<string, Record<string, unknown>>;
+    return Object.entries(parsed).map(([key, value], index) => ({
+      id: `${key}-${index}`,
+      name: value.name ?? key,
+      type: value.type ?? key,
+      status: value.status ?? "registered",
+      checksum: value.checksum ?? "",
+      architecture: value.architecture ?? value.name ?? key,
+      version: value.version ?? "active",
+      artifactPath: value.path ?? value.artifactPath ?? "",
+      embeddingDimension: value.embeddingDimension ?? null,
+      datasetRef: value.datasetRef ?? null,
+      active: Boolean(value.active ?? (value.status === "active")),
+      verified: Boolean(value.verified ?? (value.status === "active" || value.status === "verified")),
+      createdAt: value.createdAt ?? new Date().toISOString(),
+      updatedAt: value.updatedAt ?? new Date().toISOString(),
+    }));
+  } catch {
+    return [];
+  }
 }
 
 function filtersPass(
@@ -814,8 +849,10 @@ router.post(
 router.get("/visiontrace/models", async (req: Request, res: Response): Promise<void> => {
   const admin = requireAdmin(req, res);
   if (!admin) return;
-  const models = await db.select().from(modelArtifactsTable).orderBy(desc(modelArtifactsTable.createdAt));
-  res.json(models);
+  const dbModels = await db.select().from(modelArtifactsTable).orderBy(desc(modelArtifactsTable.createdAt));
+  const fallbackModels = readActiveModelManifest();
+  const merged = [...dbModels, ...fallbackModels.filter((fallback) => !dbModels.some((row) => row.checksum === fallback.checksum && row.type === fallback.type))];
+  res.json(merged);
 });
 
 router.post("/visiontrace/models/activate", async (req: Request, res: Response): Promise<void> => {

@@ -63,8 +63,8 @@ function SkeletonBlock() {
 }
 function Shell({ children }: { children: ReactNode }) {
   const [location] = useLocation();
-  const runtime = useGetVisionRuntime({ query: { refetchInterval: 30000 } });
-  const health = useHealthCheck({ query: { refetchInterval: 30000 } });
+  const runtime = useGetVisionRuntime({ query: { queryKey: ['getVisionRuntime'], refetchInterval: 30000 } });
+  const health = useHealthCheck({ query: { queryKey: ['healthCheck'], refetchInterval: 30000 } });
   const runtimeStatus = runtime.data?.status ?? (health.isError ? 'unavailable' : 'partial');
   const links = [
     { href: '/', title: 'Search workspace', icon: Search },
@@ -113,7 +113,7 @@ function App() {
 
 function WorkspacePage() {
   const queryClient = useQueryClient();
-  const overview = useGetVisionTraceOverview({ query: { refetchInterval: 30000 } });
+  const overview = useGetVisionTraceOverview({ query: { queryKey: getGetVisionTraceOverviewQueryKey(), refetchInterval: 30000 } });
   const cameras = useListCameras();
   const uploadMutation = useRequestUploadUrl();
   const detectMutation = useDetectPeopleInImage();
@@ -214,7 +214,7 @@ function WorkspacePage() {
         {results?.rankingNote && <div className="source-note" style={{ borderTop: 0, borderBottom: '1px solid hsl(var(--border))' }}>{results.rankingNote}</div>}
         {active && !results ? <div className="empty-state"><div><div className="empty-symbol"><LoaderCircle size={20} className="spin" /></div><h3>Working through indexed footage</h3><p>{job?.stage ?? 'Preparing the query and searching the available index.'}</p>{job && <div className="progress-track" style={{ marginTop: 15 }}><div className="progress-fill" style={{ transform: `scaleX(${Math.max(0, Math.min(100, job.progress)) / 100})` }} /></div>}</div></div>
           : results?.results.length ? <div className="results-grid">{results.results.map(hit => <HitCard key={hit.id} hit={hit} />)}</div>
-          : <div className="empty-state"><div><div className="empty-symbol"><Fingerprint size={21} /></div><h3>{results ? 'No matching frames returned' : 'Start with a query'}</h3><p>{results ? 'The search completed without matching appearances. No results have been added or inferred.' : 'Upload a still or clip, choose search scope, then inspect source-linked frames.'}</p></div></div>}
+          : <div className="empty-state"><div><div className="empty-symbol"><Fingerprint size={21} /></div><h3>{results ? 'No matching videos for this person' : 'Start with a query'}</h3><p>{results ? 'This uploaded person was not found in the current indexed footage. No video results were returned for this query.' : 'Upload a still or clip, choose search scope, then inspect source-linked frames.'}</p></div></div>}
         {job?.status === 'failed' && <div className="toast-error" style={{ margin: '0 14px 14px' }}>Search job failed: {job.error || 'No error detail was returned.'}</div>}
       </section>
     </div>
@@ -233,7 +233,28 @@ function HitCard({ hit }: { hit: SearchHit }) {
   }, [open, hit.videoId]);
   return <>
     <article className="hit-card" onClick={() => setOpen(true)} data-testid={`card-hit-${hit.id}`} role="button" tabIndex={0} onKeyDown={event => { if (event.key === 'Enter') setOpen(true); }}>
-      <div className="hit-image">{hit.thumbnailPath ? <img src={hit.thumbnailPath} alt={`Frame ${hit.frameNumber} from ${hit.sourceName}`} /> : <div className="empty-symbol"><FileVideo2 size={21} /></div>}<span className="frame-label">FRAME {hit.frameNumber}</span><span className="sim-chip">Visual similarity · {hit.similarity.toFixed(3)}</span></div>
+      <div className="hit-image">
+        {hit.videoPath ? (
+          <video
+            src={hit.videoPath}
+            muted
+            playsInline
+            autoPlay
+            loop
+            preload="metadata"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+            onLoadedMetadata={(event) => {
+              event.currentTarget.currentTime = hit.timestampSeconds;
+            }}
+          />
+        ) : hit.thumbnailPath ? (
+          <img src={hit.thumbnailPath} alt={`Frame ${hit.frameNumber} from ${hit.sourceName}`} />
+        ) : (
+          <div className="empty-symbol"><FileVideo2 size={21} /></div>
+        )}
+        <span className="frame-label">FRAME {hit.frameNumber}</span>
+        <span className="sim-chip">Visual similarity · {hit.similarity.toFixed(3)}</span>
+      </div>
       <div className="hit-meta"><div className="hit-title">{hit.sourceName}</div><div className="hit-sub"><span>{hit.cameraId ?? 'Camera unavailable'}</span><span>{duration(hit.timestampSeconds)}</span></div></div>
     </article>
     {open && <div role="dialog" aria-modal="true" onClick={() => setOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 50, background: '#172b2dcc', display: 'grid', placeItems: 'center', padding: 18 }}><div className="panel" onClick={e => e.stopPropagation()} style={{ width: 'min(760px,100%)', maxHeight: '90vh', overflow: 'auto', padding: 18 }}><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}><div><div className="eyebrow">Source evidence</div><strong>{videoDetails.data?.name ?? hit.sourceName}</strong></div><button className="btn" onClick={() => setOpen(false)}>Close</button></div><video ref={playerRef} src={hit.videoPath} controls preload="metadata" style={{ width: '100%', maxHeight: '55vh', background: '#1c2828' }} onLoadedMetadata={e => { e.currentTarget.currentTime = hit.timestampSeconds; }} /><div className="source-note" style={{ paddingLeft: 0 }}>Camera {videoDetails.data?.cameraId ?? hit.cameraId ?? 'not supplied'} · Frame {hit.frameNumber} · {duration(hit.timestampSeconds)} · visual similarity {hit.similarity.toFixed(3)}</div><div className="section-kicker" style={{ marginTop: 12 }}>Indexed frames · select to seek source</div>{frames.isPending ? <div className="skeleton skeleton-line" /> : frames.data?.length ? <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 5 }}>{frames.data.map(frame => <button key={frame.id} className="detect-option" style={{ minWidth: 100 }} onClick={() => { if (playerRef.current) playerRef.current.currentTime = frame.timestampSeconds; }}><div className="detect-swatch" style={{ height: 55 }}>{frame.thumbnailPath ? <img src={frame.thumbnailPath} alt={`Frame ${frame.frameNumber}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> : <FileVideo2 size={17} />}</div><small>Frame {frame.frameNumber} · {duration(frame.timestampSeconds)}</small></button>)}</div> : <p className="subtitle">{frames.isError ? 'Indexed frames could not be loaded.' : 'No indexed frame records were returned for this source.'}</p>}</div></div>}
@@ -242,7 +263,7 @@ function HitCard({ hit }: { hit: SearchHit }) {
 
 function LibraryPage() {
   const queryClient = useQueryClient();
-  const videos = useListVideos({ query: { refetchInterval: 12000 } });
+  const videos = useListVideos({ query: { queryKey: getListVideosQueryKey(), refetchInterval: 12000 } });
   const uploadMutation = useRequestUploadUrl();
   const register = useRegisterVideo();
   const [file, setFile] = useState<File | null>(null);
@@ -272,7 +293,7 @@ function LibraryPage() {
 }
 
 function JobsPage() {
-  const overview = useGetVisionTraceOverview({ query: { refetchInterval: 5000 } });
+  const overview = useGetVisionTraceOverview({ query: { queryKey: getGetVisionTraceOverviewQueryKey(), refetchInterval: 5000 } });
   const jobs = overview.data?.recentJobs ?? [];
   return <div className="page"><div className="page-heading"><div><div className="eyebrow">Persistent processing record</div><h1>Processing jobs</h1><p className="subtitle">Indexing, dataset import, and video-search work reported by the service.</p></div><button className="btn" onClick={() => overview.refetch()} data-testid="button-refresh-jobs"><Activity size={14} />Refresh status</button></div>
     <div className="stats-strip"><div className="stat-box"><div className="stat-label">Active</div><div className="stat-value mono">{overview.data?.activeJobs ?? '—'}</div><div className="stat-foot">Service reported</div></div><div className="stat-box"><div className="stat-label">Recent jobs</div><div className="stat-value mono">{jobs.length || (overview.isLoading ? '—' : '0')}</div><div className="stat-foot">Returned by overview</div></div><div className="stat-box"><div className="stat-label">Updated</div><div className="stat-value" style={{ fontSize: 16 }}>{overview.data ? formatDate(overview.data.runtime.verifiedAt) : '—'}</div><div className="stat-foot">Runtime verification</div></div><div className="stat-box"><div className="stat-label">Runtime</div><div className="stat-value" style={{ fontSize: 16, textTransform: 'capitalize' }}>{overview.data?.runtime.status ?? '—'}</div><div className="stat-foot">Inference capability</div></div></div>
@@ -289,7 +310,7 @@ function JobRow({ job }: { job: ProcessingJob }) {
 
 function DatasetsPage() {
   const queryClient = useQueryClient();
-  const datasets = useListDatasets({ query: { refetchInterval: 20000 } });
+  const datasets = useListDatasets({ query: { queryKey: getListDatasetsQueryKey(), refetchInterval: 20000 } });
   const startImport = useStartDatasetImport();
   const [datasetId, setDatasetId] = useState('');
   const [split, setSplit] = useState('train');
@@ -321,6 +342,16 @@ function ModelsPage() {
   const [models, setModels] = useState<Array<Record<string, unknown>>>([]);
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
+  const displayValue = (model: Record<string, unknown>, key: string) => {
+    const value = model[key];
+    if (value == null || value === '') return '—';
+    if (typeof value === 'object') return JSON.stringify(value);
+    return String(value);
+  };
+  const shortChecksum = (model: Record<string, unknown>) => {
+    const checksum = model.checksum;
+    return checksum && checksum !== '' ? String(checksum).slice(0, 16) : '—';
+  };
   const load = async () => {
     setError('');
     try {
@@ -349,7 +380,7 @@ function ModelsPage() {
     {error && <div className="toast-error">{error}</div>}{notice && <div className="notice">{notice}</div>}
     <section className="panel"><div className="panel-head"><h2>Registered artifacts</h2><button className="btn" onClick={() => load()}>Refresh</button></div>
       {!models.length ? <div className="empty-state"><div><h3>No registry rows yet</h3><p>Run model verification, then register artifacts with checksums outside git. Active detector and Re-ID hashes also live in data/active-models.json.</p></div></div>
-        : <div className="table-wrap"><table><thead><tr><th>Name</th><th>Type</th><th>Status</th><th>Checksum</th><th></th></tr></thead><tbody>{models.map(model => <tr key={String(model.id)}><td>{String(model.name)}</td><td>{String(model.type)}</td><td><StatusBadge status={String(model.status)} /></td><td className="mono">{String(model.checksum).slice(0, 16)}</td><td><button className="btn" disabled={Boolean(model.active) || !model.verified} onClick={() => activate(String(model.id))}>Activate</button></td></tr>)}</tbody></table></div>}
+        : <div className="table-wrap"><table><thead><tr><th>Name</th><th>Type</th><th>Status</th><th>Architecture</th><th>Version</th><th>Embedding</th><th>Dataset</th><th>Artifact path</th><th>Registered</th><th>Checksum</th><th></th></tr></thead><tbody>{models.map(model => <tr key={String(model.id)}><td style={{ minWidth: 170 }}>{String(model.name)}</td><td className="mono">{displayValue(model, 'type')}</td><td><StatusBadge status={String(model.status)} /></td><td className="mono">{displayValue(model, 'architecture')}</td><td className="mono">{displayValue(model, 'version')}</td><td className="mono">{displayValue(model, 'embeddingDimension')}</td><td style={{ maxWidth: 180, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{displayValue(model, 'datasetRef')}</td><td style={{ maxWidth: 220, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} className="mono">{displayValue(model, 'artifactPath')}</td><td className="mono">{formatDate(typeof model.createdAt === 'string' ? model.createdAt : null)}</td><td className="mono">{shortChecksum(model)}</td><td><button className="btn" disabled={Boolean(model.active) || !model.verified} onClick={() => activate(String(model.id))}>Activate</button></td></tr>)}</tbody></table></div>}
     </section>
   </div>;
 }
@@ -366,10 +397,29 @@ type GalleryVideo = { id: string; name: string; cameraId: string | null; personC
 type GalleryResponse = { detections: GalleryDetection[]; total: number; page: number; pageSize: number; pages: number };
 type SearchByDetectionResult = { id: string; videoId: string; sourceName: string; cameraId: string | null; frameNumber: number; timestampSeconds: number; similarity: number; thumbnailPath: string | null; videoPath: string; bbox: number[]; detectorScore: number; detectionId: string; trackletId: string | null };
 
-const devHeaders = () => import.meta.env.VITE_VISIONTRACE_DEV_USER_ID ? { 'x-visiontrace-dev-user': import.meta.env.VITE_VISIONTRACE_DEV_USER_ID } : {};
+const devHeaders = (): Record<string, string> => {
+  const headers: Record<string, string> = {};
+  const userId = import.meta.env.VITE_VISIONTRACE_DEV_USER_ID;
+  if (userId) headers['x-visiontrace-dev-user'] = String(userId);
+  return headers;
+};
 
 async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(path, { credentials: 'include', headers: { ...devHeaders(), ...(init?.headers ?? {}) }, ...init });
+  const headers = new Headers(devHeaders());
+  const nextHeaders = init?.headers;
+  if (nextHeaders) {
+    if (nextHeaders instanceof Headers) {
+      nextHeaders.forEach((value, key) => headers.set(key, value));
+    } else if (Array.isArray(nextHeaders)) {
+      nextHeaders.forEach(([key, value]) => headers.set(key, value));
+    } else {
+      Object.entries(nextHeaders as Record<string, string | undefined>).forEach(([key, value]) => {
+        if (value !== undefined) headers.set(key, value);
+      });
+    }
+  }
+
+  const res = await fetch(path, { ...init, credentials: 'include', headers });
   const payload = await res.json() as { error?: string } & T;
   if (!res.ok) throw new Error((payload as { error?: string }).error || `Request failed (${res.status})`);
   return payload as T;
@@ -496,9 +546,24 @@ function GalleryCard({ detection, onSearch, isSearchTarget }: { detection: Galle
     data-testid={`gallery-card-${detection.id}`}
   >
     <div style={{ width: '100%', paddingBottom: '133%', position: 'relative', background: '#1a2e2c' }}>
-      {hasThumb
-        ? <img src={detection.thumbnailPath!} alt={`Person detection from ${detection.videoName}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-        : <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', color: '#4a7269' }}><Users size={28} /></div>}
+      {detection.videoPath ? (
+        <video
+          src={detection.videoPath}
+          muted
+          playsInline
+          autoPlay
+          loop
+          preload="metadata"
+          onLoadedMetadata={(event) => {
+            event.currentTarget.currentTime = detection.timestampSeconds;
+          }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        />
+      ) : hasThumb ? (
+        <img src={detection.thumbnailPath!} alt={`Person detection from ${detection.videoName}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+      ) : (
+        <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', color: '#4a7269' }}><Users size={28} /></div>
+      )}
       <span style={{ position: 'absolute', top: 4, right: 4, background: 'rgba(0,0,0,0.7)', color: '#9fc7b9', fontSize: 9, padding: '2px 5px', borderRadius: 4, fontFamily: 'monospace' }}>{score}%</span>
       <span style={{ position: 'absolute', bottom: 4, left: 4, background: 'rgba(0,0,0,0.7)', color: '#cde8e1', fontSize: 9, padding: '2px 5px', borderRadius: 4, fontFamily: 'monospace' }}>{duration(detection.timestampSeconds)}</span>
       {isSearchTarget && <div style={{ position: 'absolute', inset: 0, border: '2px solid #3fcfa0', borderRadius: 8, pointerEvents: 'none' }} />}
