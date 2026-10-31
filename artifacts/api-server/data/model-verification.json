@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-30T07:54:50.136764+00:00",
+  "verifiedAt": "2026-10-31T11:28:23.443771+00:00",
   "detector": "yolo11n",
   "reidArchitecture": "osnet_x1_0",
   "detectorWeightsSha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
@@ -16,5 +16,5 @@
     "embeddingMetric": "cosine_via_inner_product"
   },
   "sampleDetectionCount": 2,
-  "sampleImage": "/home/swapnil/BUG PROOF/Captain Up/VisionAI/VisionTrace-AI-Lab/artifacts/api-server/ml/tests/fixtures/sample-person.jpg"
+  "sampleImage": "C:\\Users\\Swapnil\\Desktop\\VisionAI\\VISIONTRACE-AI-using-computer-vision\\data\\test images\\query_person_A.jpg"
 }

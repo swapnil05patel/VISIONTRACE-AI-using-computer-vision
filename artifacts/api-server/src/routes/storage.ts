@@ -7,7 +7,7 @@ import {
 import { db, privateUploadsTable } from "@workspace/db";
 import { Router, type IRouter, type Request, type Response } from "express";
 import { authenticatedUserId } from "../lib/clerkAuth";
-import { ObjectPermission } from "../lib/objectAcl";
+import { ObjectPermission, type AclCapableFile } from "../lib/objectAcl";
 import { ObjectStorageService } from "../lib/objectStorage";
 
 const router: IRouter = Router();
@@ -89,13 +89,13 @@ export async function getOwnedUpload(
 
   try {
     const file = await objectStorage.getObjectEntityFile(objectPath);
-    const [metadata] = await file.getMetadata();
+    const [metadata] = await (file as AclCapableFile).getMetadata();
     const actualSize = Number(metadata.size ?? 0);
     const actualType = String(metadata.contentType ?? "");
     if (!actualSize || actualSize > maxBytes) {
       return { ok: false, status: 413, error: `${kind} exceeds the configured size limit.` };
     }
-    const [header] = await file.download({ start: 0, end: 31 });
+    const [header] = await (file as any).download({ start: 0, end: 31 });
     if (!acceptedTypes.has(actualType) || !matchesContent(header, actualType)) {
       return { ok: false, status: 415, error: "File content does not match an allowed media format." };
     }
@@ -248,14 +248,29 @@ router.get(
       const file = await objectStorage.getObjectEntityFile(objectPath);
       const canRead = await objectStorage.canAccessObjectEntity({
         userId: ownerId,
-        objectFile: file,
+        objectFile: file as AclCapableFile,
         requestedPermission: ObjectPermission.READ,
       });
       if (!canRead) {
         res.status(403).json({ error: "You do not have access to this object." });
         return;
       }
-      sendObject(res, await objectStorage.downloadObject(file, 120));
+
+      // Parse Range header for video seeking support
+      const rangeHeader = req.headers.range;
+      let range: { start: number; end: number } | undefined;
+      if (rangeHeader) {
+        const [metadata] = await (file as AclCapableFile).getMetadata();
+        const totalSize = Number(metadata.size ?? 0);
+        const match = /bytes=(\d+)-(\d*)/.exec(rangeHeader);
+        if (match && totalSize > 0) {
+          const start = parseInt(match[1], 10);
+          const end = match[2] ? parseInt(match[2], 10) : Math.min(start + 1024 * 1024 - 1, totalSize - 1);
+          range = { start, end: Math.min(end, totalSize - 1) };
+        }
+      }
+
+      sendObject(res, await objectStorage.downloadObject(file, 120, range));
     } catch (error) {
       req.log.warn({ err: error }, "Private object is not available");
       res.status(404).json({ error: "Object not found." });

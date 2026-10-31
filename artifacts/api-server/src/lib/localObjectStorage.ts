@@ -12,8 +12,10 @@ export type LocalObjectMeta = {
 
 export class LocalStoredFile {
   readonly name: string;
+  readonly absolutePath: string;
 
-  constructor(private readonly absolutePath: string, private readonly objectPath: string) {
+  constructor(absolutePath: string, private readonly objectPath: string) {
+    this.absolutePath = absolutePath;
     this.name = this.objectPath;
   }
 
@@ -112,12 +114,39 @@ export class LocalObjectStorage {
   }
 }
 
-export function downloadLocalFile(file: LocalStoredFile, cacheTtlSec: number): globalThis.Response {
-  const nodeStream = file.createReadStream();
+export function downloadLocalFile(
+  file: LocalStoredFile,
+  cacheTtlSec: number,
+  range?: { start: number; end: number },
+): globalThis.Response {
+  const absolutePath = file.absolutePath;
+  const stat = statSync(absolutePath);
+  const totalSize = stat.size;
+
+  if (range) {
+    const { start, end } = range;
+    const chunkSize = end - start + 1;
+    const nodeStream = createReadStream(absolutePath, { start, end });
+    const webStream = Readable.toWeb(nodeStream as unknown as Readable) as ReadableStream;
+    return new Response(webStream, {
+      status: 206,
+      headers: {
+        "Content-Type": "video/mp4",
+        "Content-Range": `bytes ${start}-${end}/${totalSize}`,
+        "Accept-Ranges": "bytes",
+        "Content-Length": String(chunkSize),
+        "Cache-Control": `private, max-age=${cacheTtlSec}`,
+      },
+    });
+  }
+
+  const nodeStream = createReadStream(absolutePath);
   const webStream = Readable.toWeb(nodeStream as unknown as Readable) as ReadableStream;
   return new Response(webStream, {
     headers: {
-      "Content-Type": "application/octet-stream",
+      "Content-Type": "video/mp4",
+      "Accept-Ranges": "bytes",
+      "Content-Length": String(totalSize),
       "Cache-Control": `private, max-age=${cacheTtlSec}`,
     },
   });

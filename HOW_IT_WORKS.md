@@ -174,3 +174,21 @@ Both must pass `verify_models.py` before search is enabled. Verification checks 
 - Cross-video identity matching is done purely by **embedding similarity** via FAISS.
 - Changing the embedding space (e.g. fine-tuning OSNet) requires a full FAISS index rebuild.
 - Only process footage you are authorized to use.
+
+
+User uploads video
+       ↓
+Express API (port 8080)  ←→  PostgreSQL (metadata + embeddings)
+       ↓
+Job Worker (polls every 2s)
+       ↓
+ML Sidecar (port 18777, FastAPI)
+  ├── YOLO11n  → detect people per frame
+  ├── IoUTracker → assign tracklet IDs across frames
+  ├── OSNet x1.0 → 512-d L2 embedding per person crop
+  └── FAISS IndexFlatIP → cosine similarity search
+       ↓
+React Frontend (port 3000)
+  ├── Upload → Register video → poll job status
+  ├── Gallery → browse all indexed detections
+  └── Search → upload query image → pick person → FAISS search → ranked results

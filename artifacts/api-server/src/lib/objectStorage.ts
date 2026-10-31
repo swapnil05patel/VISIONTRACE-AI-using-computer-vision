@@ -14,6 +14,7 @@ import {
 import {
   LocalObjectStorage,
   LocalStoredFile,
+  downloadLocalFile,
   usesLocalObjectStorage,
 } from './localObjectStorage';
 
@@ -113,17 +114,25 @@ export class ObjectStorageService {
   async downloadObject(
     file: StoredObject,
     cacheTtlSec: number = 3600,
+    range?: { start: number; end: number },
   ): Promise<Response> {
-    const [metadata] = await file.getMetadata();
-    const aclPolicy = await getObjectAclPolicy(file);
+    const [metadata] = await (file as AclCapableFile).getMetadata();
+    const aclPolicy = await getObjectAclPolicy(file as AclCapableFile);
     const isPublic = aclPolicy?.visibility === 'public';
+    const contentType = (metadata.contentType as string) || 'application/octet-stream';
 
-    const nodeStream = file.createReadStream();
+    if (file instanceof LocalStoredFile) {
+      return downloadLocalFile(file, cacheTtlSec, range);
+    }
+
+    const nodeStream = range
+      ? file.createReadStream({ start: range.start, end: range.end })
+      : file.createReadStream();
     const webStream = Readable.toWeb(nodeStream) as ReadableStream;
 
     const headers: Record<string, string> = {
-      'Content-Type':
-        (metadata.contentType as string) || 'application/octet-stream',
+      'Content-Type': contentType,
+      'Accept-Ranges': 'bytes',
       'Cache-Control': `${isPublic ? 'public' : 'private'}, max-age=${cacheTtlSec}`,
     };
     if (metadata.size) {
@@ -224,7 +233,7 @@ export class ObjectStorageService {
     }
 
     const objectFile = await this.getObjectEntityFile(normalizedPath);
-    await setObjectAclPolicy(objectFile, aclPolicy);
+    await setObjectAclPolicy(objectFile as AclCapableFile, aclPolicy);
     return normalizedPath;
   }
 
@@ -305,6 +314,6 @@ async function signObjectURL({
     );
   }
 
-  const { signed_url: signedURL } = await response.json();
+  const { signed_url: signedURL } = await response.json() as { signed_url: string };
   return signedURL;
 }
